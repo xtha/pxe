@@ -1,0 +1,4 @@
+tftp-root=/var/www/html/pxe
+dhcp-match=ipxe,175
+dhcp-boot=net:#ipxe,ipxelinux.0,,10.24.4.97
+dhcp-boot=http://10.24.4.97/pxe/menu.ipxe,,10.24.4.97
