@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+   <installation srtype="ext">
+      <primary-disk>sda</primary-disk>
+      <keymap>us</keymap>
+      <root-password>password</root-password>
+      <source type="url">ftp://192.168.14.250/os/xs602/</source>
+      <admin-interface name="eth2" proto="dhcp" />
+      <timezone>Asia/Shanghai</timezone>
+</installation>

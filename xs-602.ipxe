@@ -1,0 +1,4 @@
+#!ipxe
+kernel http://192.168.31.245/os/xenserver-6.0.201/boot/pxelinux/mboot.c32
+imgargs http://192.168.31.245/os/xenserver-6.0.201/boot/xen.gz dom0_mem=752M com1=115200,8n1 console=com1,tty --- http://192.168.31.245/os/xenserver-6.0.201/boot/pxelinux/vmlinuz console=ttyS0,115200n8 console=tty0 install --- http://192.168.31.245/os/xenserver-6.0.201/install.img
+boot mboot.c32

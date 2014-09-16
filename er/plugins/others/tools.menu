@@ -1,0 +1,5 @@
+LABEL NetbootCD
+    KERNEL pxelinux.cfg/roms/memdisk
+    APPEND iso
+    INITRD os/NetbootCD-5.2.iso
+

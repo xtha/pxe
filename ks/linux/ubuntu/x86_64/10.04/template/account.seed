@@ -1,0 +1,8 @@
+########################################################
+# Account setup
+########################################################
+d-i passwd/root-login boolean true
+d-i passwd/root-password password gdcloud!.2013
+d-i passwd/root-password-again password gdcloud!.2013
+d-i passwd/make-user boolean false
+d-i user-setup/encrypt-home boolean false

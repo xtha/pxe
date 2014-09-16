@@ -1,0 +1,13 @@
+MENU BEGIN UBUNTUINSTALL
+MENU LABEL ^XenServer
+# ------====> Include Menu Settings <====------
+#MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+#MENU BACKGROUND er/plugins/xenserver/xenserver.png
+MENU INCLUDE er/plugins/xenserver/6.0.201/xenservermain.menu
+MENU INCLUDE er/plugins/xenserver/6.2.0/xenservermain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

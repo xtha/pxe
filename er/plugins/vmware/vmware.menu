@@ -1,0 +1,13 @@
+MENU BEGIN VMware
+MENU LABEL ^VMware ESX & ESXi
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/vmware/vmware.png
+
+MENU INCLUDE er/plugins/vmware/esxi5/vmwaremain.menu
+  
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

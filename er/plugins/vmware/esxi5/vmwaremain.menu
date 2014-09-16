@@ -1,0 +1,7 @@
+LABEL ESXI5
+MENU LABEL ^VMware ESXi 5.0 x64
+KERNEL er/plugins/vmware/esxi5/mboot.c32
+APPEND -c /er/plugins/vmware/esxi5/boot.cfg
+TEXT HELP
+                 Install VMware x64 ESXi 5.0.
+ENDTEXT

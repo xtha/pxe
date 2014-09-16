@@ -1,0 +1,12 @@
+http://virtualx.blog.51cto.com/4023701/729043
+
+cloudvm->gPXE->pxelinux.0-->boot.php?${hostname}-->os
+                                     ${mac}
+                                     ${uuid}
+                         -->menu.c32
+
+XSVM->gPXE->boot.php-->menu.gpxe
+
+Server->ipxelinux.0->menu.c32
+                  |
+                  -->menu.ipxe

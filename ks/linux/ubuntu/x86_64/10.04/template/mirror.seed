@@ -1,0 +1,11 @@
+###################################################
+# Mirror settings
+###################################################
+d-i mirror/protocol string http
+d-i mirror/country string manual
+d-i mirror/http/hostname string 10.24.4.4
+d-i mirror/http/directory string /os/linux/ubuntu/x86_64/10.04
+#d-i mirror/suite string lucid
+#d-i mirror/udeb/suite string lucid
+d-i mirror/udeb/components multiselect main, restricted
+d-i mirror/http/proxy string 

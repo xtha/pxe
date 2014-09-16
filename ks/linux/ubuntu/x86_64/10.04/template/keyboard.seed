@@ -1,0 +1,5 @@
+###################################################
+# Keyboard selection.
+###################################################
+d-i console-setup/ask_detect boolean false
+d-i console-setup/layoutcode string us

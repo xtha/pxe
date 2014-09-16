@@ -1,0 +1,24 @@
+#!gpxe
+#kernel http://192.168.31.245/os/centos6u2-64/images/pxeboot/vmlinuz
+#initrd http://192.168.31.245/os/centos6u2-64/images/pxeboot/initrd.img
+#boot
+######################################################################
+echo Performing DHCP on first network interface
+#dhcp net0
+#set 210:string http://pxe.hdtr.com/pxe/${manufacturer}/${hostname}
+#set 210:string http://pxe.hdtr.com/pxe/
+#${manufacturer}
+#${uuid}
+#${hostname}
+#${username}
+#${password}
+#${manufacturer}
+#${user-class}
+#${product}
+#${asset}
+#${busid}
+#${mac}
+#${serial}
+set 209:string pxelinux.cfg/default
+chain ${210:string}pxelinux.0
+boot pxelinux.0

@@ -1,0 +1,41 @@
+File descriptor 5 (socket:[32733]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 6 (/dev/null) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 7 (socket:[32745]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 8 (socket:[32752]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 9 (socket:[32759]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 10 (socket:[32766]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 11 (socket:[32773]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 12 (socket:[32780]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 13 (socket:[59197]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 14 (socket:[59204]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 15 (socket:[59212]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 16 (socket:[59219]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 17 (socket:[59226]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 18 (socket:[59235]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 19 (socket:[59242]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 20 (socket:[59316]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 21 (socket:[59322]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 22 (socket:[59329]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 23 (socket:[59336]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 24 (socket:[59343]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 25 (socket:[59368]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 26 (socket:[59606]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 27 (socket:[59632]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 28 (socket:[59669]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 29 (socket:[59881]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 30 (socket:[59898]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 31 (socket:[59923]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 32 (socket:[59963]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 33 (socket:[60016]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 34 (socket:[60036]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 35 (socket:[60070]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 36 (socket:[60113]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 37 (socket:[60121]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 38 (socket:[60170]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 39 (socket:[60206]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 40 (socket:[60216]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 41 (socket:[60443]) leaked on vgscan invocation. Parent PID 22315: sh
+File descriptor 43 (socket:[62943]) leaked on vgscan invocation. Parent PID 22315: sh
+  Partial mode. Incomplete volume groups will be activated read-only.
+  Reading all physical volumes.  This may take a while...
+  Found volume group "VG_XenStorage-291ad47e-bf26-b11c-43e9-dd87122306f0" using metadata type lvm2

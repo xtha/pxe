@@ -1,0 +1,7 @@
+########################################################
+# Base system installation
+########################################################
+# Always install the virtual kernel, with no headers.
+d-i base-installer/kernel/image string linux-generic
+d-i base-installer/kernel/override-image    string linux-virtual
+d-i base-installer/kernel/headers   boolean false

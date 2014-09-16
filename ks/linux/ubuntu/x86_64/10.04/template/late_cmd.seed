@@ -1,0 +1,15 @@
+########################################################
+# This command is run just before the install finishes, but when there is
+# still a usable /target directory. You can chroot to /target and use it
+# directly, or use the apt-install and in-target commands to easily install
+# packages and run commands in the target system.
+########################################################
+#d-i preseed/late_command string \
+#chvt 4 && chroot /target sh -c "wget http://pxe.hdtr.com/pxe/ks/linux/ubuntu/10.04.4/x86_64/postrun.sh && /bin/sh postrun.sh";
+
+#in-target mv /etc/resolvconf/resolv.conf.d/original /etc/resolvconf/resolv.conf.d/tail; \
+#in-target sed -i -e 's/http:\/\/boot.smidsrod.lan\/ubuntu-10.04-server-amd64/http:\/\/no.archive.ubuntu.com\/ubuntu/' /etc/apt/sources.list; \
+#in-target apt-get -qq update; apt-install joe; \
+#in-target sed -i -e 's/GRUB_CMDLINE_LINUX_DEFAULT=\"quiet\"/GRUB_CMDLINE_LINUX_DEFAULT=\"\"/' /etc/default/grub; \
+#in-target sed -i -e 's/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"iscsi_initiator=iqn.2011-02.lan.smidsrod:$(hostname)\"/' /etc/default/grub; \
+#in-target update-grub;

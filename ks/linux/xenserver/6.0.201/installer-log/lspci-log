@@ -1,0 +1,1896 @@
+00:00.0 Host bridge: Intel Corporation Sandy Bridge DMI2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Interrupt: pin A routed to IRQ 0
+	Capabilities: [90] Express Root Port (Slot-) IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x4, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+		Root: Correctable- Non-Fatal- Fatal- PME-
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [144] Unknown (11)
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [280] Unknown (11)
+
+00:01.0 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 1a (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed 2.5Gb/s, Width x4, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed 2.5Gb/s, Width x0
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 25.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+00:01.1 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 1b (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=02, subordinate=03, sec-latency=0
+	I/O behind bridge: 00008000-00008fff
+	Memory behind bridge: df800000-df8fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 256 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x4, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed unknown, Width x4
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 25.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+00:02.0 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 2a (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=04, subordinate=05, sec-latency=0
+	I/O behind bridge: 00007000-00007fff
+	Memory behind bridge: df100000-df7fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 256 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x16, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed unknown, Width x8
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 75.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+00:03.0 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 3a in PCI Express Mode (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=06, subordinate=06, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag+
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x8, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed 2.5Gb/s, Width x0
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 25.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+00:03.2 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 3c (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=07, subordinate=07, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x8, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed 2.5Gb/s, Width x0
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 25.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+00:04.0 System peripheral: Intel Corporation Sandy Bridge DMA Channel 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at df91c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.1 System peripheral: Intel Corporation Sandy Bridge DMA Channel 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 10
+	Region 0: Memory at df918000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.2 System peripheral: Intel Corporation Sandy Bridge DMA Channel 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at df914000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.3 System peripheral: Intel Corporation Sandy Bridge DMA Channel 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 11
+	Region 0: Memory at df910000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.4 System peripheral: Intel Corporation Sandy Bridge DMA Channel 4 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at df90c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.5 System peripheral: Intel Corporation Sandy Bridge DMA Channel 5 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 10
+	Region 0: Memory at df908000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.6 System peripheral: Intel Corporation Sandy Bridge DMA Channel 6 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at df904000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:04.7 System peripheral: Intel Corporation Sandy Bridge DMA Channel 7 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 11
+	Region 0: Memory at df900000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:05.0 System peripheral: Intel Corporation Sandy Bridge Address Map, VTd_Misc, System Management (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+00:05.2 System peripheral: Intel Corporation Sandy Bridge Control Status and Global Errors (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+00:05.4 PIC: Intel Corporation Sandy Bridge I/O APIC (rev 07) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Region 0: Memory at df925000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [6c] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+00:11.0 PCI bridge: Intel Corporation Patsburg PCI Express Virtual Root Port (rev 06) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=08, subordinate=08, sec-latency=0
+	I/O behind bridge: 00006000-00006fff
+	Memory behind bridge: 90000000-900fffff
+	Prefetchable memory behind bridge: 00000000de000000-00000000de4fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Express Root Port (Slot-) IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 512 bytes
+		Link: Supported Speed 2.5Gb/s, Width x1, ASPM L0s L1, Port 17
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed 2.5Gb/s, Width x1
+		Root: Correctable- Non-Fatal- Fatal- PME-
+	Capabilities: [80] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [88] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [90] Message Signalled Interrupts: Mask- 64bit- Queue=0/0 Enable-
+		Address: 00000000  Data: 0000
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Unknown (13)
+
+00:16.0 Communication controller: Intel Corporation Patsburg HECI Controller #1 (rev 05)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at fed0e000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [8c] Message Signalled Interrupts: Mask- 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+
+00:16.1 Communication controller: Intel Corporation Patsburg HECI Controller #2 (rev 05)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 10
+	Region 0: Memory at fed0f000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [8c] Message Signalled Interrupts: Mask- 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+
+00:1a.0 USB Controller: Intel Corporation Patsburg USB2 Enhanced Host Controller #2 (rev 06) (prog-if 20 [EHCI])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 16
+	Region 0: Memory at df923000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port
+	Capabilities: [98] #13 [0306]
+
+00:1d.0 USB Controller: Intel Corporation Patsburg USB2 Enhanced Host Controller #1 (rev 06) (prog-if 20 [EHCI])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 23
+	Region 0: Memory at df922000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port
+	Capabilities: [98] #13 [0306]
+
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev a6) (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Bus: primary=00, secondary=09, subordinate=09, sec-latency=64
+	Memory behind bridge: de800000-df0fffff
+	Prefetchable memory behind bridge: 00000000dd000000-00000000ddffffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA+ MAbort- >Reset- FastB2B-
+	Capabilities: [50] Subsystem: Super Micro Computer Inc Unknown device 062f
+
+00:1f.0 ISA bridge: Intel Corporation Patsburg LPC Controller (rev 06)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information
+
+00:1f.2 SATA controller: Intel Corporation Patsburg 6-Port SATA AHCI Controller (rev 06) (prog-if 01 [AHCI 1.0])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 1277
+	Region 0: I/O ports at 9050 [size=8]
+	Region 1: I/O ports at 9040 [size=4]
+	Region 2: I/O ports at 9030 [size=8]
+	Region 3: I/O ports at 9020 [size=4]
+	Region 4: I/O ports at 9000 [size=32]
+	Region 5: Memory at df921000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] Message Signalled Interrupts: Mask- 64bit- Queue=0/0 Enable+
+		Address: fee00638  Data: 0000
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] #12 [0010]
+	Capabilities: [b0] #13 [0306]
+
+00:1f.3 SMBus: Intel Corporation Patsburg SMBus Host Controller (rev 06)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at df920000 (64-bit, non-prefetchable) [size=256]
+	Region 4: I/O ports at 1180 [size=32]
+
+00:1f.6 Signal processing controller: Intel Corporation Patsburg Thermal Management Controller (rev 06)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at fed08000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+02:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+	Subsystem: Super Micro Computer Inc Unknown device 1521
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 27
+	Region 0: Memory at df820000 (32-bit, non-prefetchable) [size=128K]
+	Region 2: I/O ports at 8020 [size=32]
+	Region 3: Memory at df8c4000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Message Signalled Interrupts: Mask+ 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [70] MSI-X: Enable+ Mask- TabSize=10
+		Vector table: BAR=3 offset=00000000
+		PBA: BAR=3 offset=00002000
+	Capabilities: [a0] Express Endpoint IRQ 0
+		Device: Supported: MaxPayload 512 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <512ns, L1 <64us
+		Device: AtnBtn- AtnInd- PwrInd-
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 256 bytes, MaxReadReq 512 bytes
+		Link: Supported Speed unknown, Width x4, ASPM L0s L1, Port 2
+		Link: Latency L0s <4us, L1 <32us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed unknown, Width x4
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number be-4f-ac-ff-ff-90-25-00
+	Capabilities: [150] Unknown (14)
+	Capabilities: [160] Unknown (16)
+	Capabilities: [1a0] Unknown (23)
+	Capabilities: [1c0] Unknown (24)
+	Capabilities: [1d0] Unknown (13)
+
+02:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+	Subsystem: Super Micro Computer Inc Unknown device 1521
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 30
+	Region 0: Memory at df800000 (32-bit, non-prefetchable) [size=128K]
+	Region 2: I/O ports at 8000 [size=32]
+	Region 3: Memory at df8c0000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Message Signalled Interrupts: Mask+ 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [70] MSI-X: Enable+ Mask- TabSize=10
+		Vector table: BAR=3 offset=00000000
+		PBA: BAR=3 offset=00002000
+	Capabilities: [a0] Express Endpoint IRQ 0
+		Device: Supported: MaxPayload 512 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <512ns, L1 <64us
+		Device: AtnBtn- AtnInd- PwrInd-
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 256 bytes, MaxReadReq 512 bytes
+		Link: Supported Speed unknown, Width x4, ASPM L0s L1, Port 2
+		Link: Latency L0s <4us, L1 <32us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed unknown, Width x4
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number be-4f-ac-ff-ff-90-25-00
+	Capabilities: [150] Unknown (14)
+	Capabilities: [160] Unknown (16)
+	Capabilities: [1a0] Unknown (23)
+	Capabilities: [1d0] Unknown (13)
+
+04:00.0 Ethernet controller: Intel Corporation 82599EB 10-Gigabit SFI/SFP+ Network Connection (rev 01)
+	Subsystem: Intel Corporation Ethernet Server Adapter X520-2
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 32
+	Region 0: Memory at df280000 (64-bit, non-prefetchable) [size=512K]
+	Region 2: I/O ports at 7020 [size=32]
+	Region 4: Memory at df704000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at df200000 [disabled] [size=512K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Message Signalled Interrupts: Mask+ 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [70] MSI-X: Enable+ Mask- TabSize=64
+		Vector table: BAR=4 offset=00000000
+		PBA: BAR=4 offset=00002000
+	Capabilities: [a0] Express Endpoint IRQ 0
+		Device: Supported: MaxPayload 512 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <512ns, L1 <64us
+		Device: AtnBtn- AtnInd- PwrInd-
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 256 bytes, MaxReadReq 512 bytes
+		Link: Supported Speed unknown, Width x8, ASPM L0s, Port 0
+		Link: Latency L0s <1us, L1 <8us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed unknown, Width x8
+	Capabilities: [e0] Vital Product Data
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 78-b1-d4-ff-ff-21-1b-00
+	Capabilities: [150] Unknown (14)
+	Capabilities: [160] Unknown (16)
+
+04:00.1 Ethernet controller: Intel Corporation 82599EB 10-Gigabit SFI/SFP+ Network Connection (rev 01)
+	Subsystem: Intel Corporation Ethernet Server Adapter X520-2
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 36
+	Region 0: Memory at df180000 (64-bit, non-prefetchable) [size=512K]
+	Region 2: I/O ports at 7000 [size=32]
+	Region 4: Memory at df700000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at df100000 [disabled] [size=512K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Message Signalled Interrupts: Mask+ 64bit+ Queue=0/0 Enable-
+		Address: 0000000000000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [70] MSI-X: Enable+ Mask- TabSize=64
+		Vector table: BAR=4 offset=00000000
+		PBA: BAR=4 offset=00002000
+	Capabilities: [a0] Express Endpoint IRQ 0
+		Device: Supported: MaxPayload 512 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <512ns, L1 <64us
+		Device: AtnBtn- AtnInd- PwrInd-
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 256 bytes, MaxReadReq 512 bytes
+		Link: Supported Speed unknown, Width x8, ASPM L0s, Port 0
+		Link: Latency L0s <1us, L1 <8us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed unknown, Width x8
+	Capabilities: [e0] Vital Product Data
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 78-b1-d4-ff-ff-21-1b-00
+	Capabilities: [150] Unknown (14)
+	Capabilities: [160] Unknown (16)
+
+08:00.0 Serial Attached SCSI controller: Intel Corporation Patsburg 4-Port SATA Storage Control Unit (rev 06)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at de47c000 (64-bit, prefetchable) [size=16K]
+	Region 2: Memory at de000000 (64-bit, prefetchable) [size=4M]
+	Region 4: I/O ports at 6000 [size=256]
+	Capabilities: [98] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [c4] Express Endpoint IRQ 0
+		Device: Supported: MaxPayload 1024 bytes, PhantFunc 0, ExtTag+
+		Device: Latency L0s unlimited, L1 unlimited
+		Device: AtnBtn- AtnInd- PwrInd-
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 128 bytes, MaxReadReq 1024 bytes
+		Link: Supported Speed 2.5Gb/s, Width x1, ASPM L0s L1, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled RCB 64 bytes CommClk+ ExtSynch-
+		Link: Speed 2.5Gb/s, Width x1
+	Capabilities: [a0] MSI-X: Enable- Mask- TabSize=2
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Unknown (14)
+	Capabilities: [180] Unknown (23)
+	Capabilities: [140] Unknown (16)
+
+09:01.0 VGA compatible controller: Matrox Graphics, Inc. MGA G200eW WPCM450 (rev 0a) (prog-if 00 [VGA controller])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 64 (4000ns min, 8000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at dd000000 (32-bit, prefetchable) [size=16M]
+	Region 1: Memory at df000000 (32-bit, non-prefetchable) [size=16K]
+	Region 2: Memory at de800000 (32-bit, non-prefetchable) [size=8M]
+	Capabilities: [dc] Power Management version 1
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+7f:08.0 System peripheral: Intel Corporation Sandy Bridge QPI Link 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:08.3 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [100] Unknown (11)
+
+7f:08.4 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:09.0 System peripheral: Intel Corporation Sandy Bridge QPI Link 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:09.3 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [100] Unknown (11)
+
+7f:09.4 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0a.0 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0a.1 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0a.2 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0a.3 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0b.0 System peripheral: Intel Corporation Sandy Bridge Interrupt Control Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0b.3 System peripheral: Intel Corporation Sandy Bridge Semaphore and Scratchpad Configuration Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.0 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.1 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.2 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.3 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller System Address Decoder 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0c.7 System peripheral: Intel Corporation Sandy Bridge System Address Decoder (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0d.0 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0d.1 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0d.2 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0d.3 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0d.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller System Address Decoder 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0e.0 System peripheral: Intel Corporation Sandy Bridge Processor Home Agent (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0e.1 Performance counters: Intel Corporation Sandy Bridge Processor Home Agent Performance Monitoring (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:0f.0 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.1 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller RAS Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.2 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.3 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.4 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.5 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:0f.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 4 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:10.0 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.1 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.2 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.3 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.4 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.5 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:10.7 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+7f:11.0 System peripheral: Intel Corporation Sandy Bridge DDRIO (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:13.0 System peripheral: Intel Corporation Sandy Bridge R2PCIe (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:13.1 Performance counters: Intel Corporation Sandy Bridge Ring to PCI Express Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:13.4 Performance counters: Intel Corporation Sandy Bridge QuickPath Interconnect Agent Ring Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:13.5 Performance counters: Intel Corporation Sandy Bridge Ring to QuickPath Interconnect Link 0 Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+7f:13.6 System peripheral: Intel Corporation Sandy Bridge Ring to QuickPath Interconnect Link 1 Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+80:02.0 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 2a (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=80, secondary=81, subordinate=81, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x16, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed 2.5Gb/s, Width x0
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 75.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+80:03.0 PCI bridge: Intel Corporation Sandy Bridge IIO PCI Express Root Port 3a in PCI Express Mode (rev 07) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=80, secondary=82, subordinate=82, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+	Capabilities: [40] Subsystem: Super Micro Computer Inc Unknown device 062f
+	Capabilities: [60] Message Signalled Interrupts: Mask+ 64bit- Queue=0/1 Enable-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express Root Port (Slot+) IRQ 0
+		Device: Supported: MaxPayload 256 bytes, PhantFunc 0, ExtTag+
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x16, ASPM unknown, Port 0
+		Link: Latency L0s unlimited, L1 <16us
+		Link: ASPM Disabled RCB 64 bytes CommClk- ExtSynch-
+		Link: Speed 2.5Gb/s, Width x0
+		Slot: AtnBtn- PwrCtrl- MRL- AtnInd- PwrInd- HotPlug- Surpise-
+		Slot: Number 0, PowerLimit 75.000000
+		Slot: Enabled AtnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq-
+		Slot: AttnInd Off, PwrInd Off, Power+
+		Root: Correctable+ Non-Fatal+ Fatal+ PME+
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Unknown (11)
+	Capabilities: [110] Unknown (13)
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Unknown (11)
+	Capabilities: [250] Unknown (25)
+	Capabilities: [280] Unknown (11)
+
+80:04.0 System peripheral: Intel Corporation Sandy Bridge DMA Channel 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at fbf1c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.1 System peripheral: Intel Corporation Sandy Bridge DMA Channel 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 10
+	Region 0: Memory at fbf18000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.2 System peripheral: Intel Corporation Sandy Bridge DMA Channel 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at fbf14000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.3 System peripheral: Intel Corporation Sandy Bridge DMA Channel 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 11
+	Region 0: Memory at fbf10000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.4 System peripheral: Intel Corporation Sandy Bridge DMA Channel 4 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 11
+	Region 0: Memory at fbf0c000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.5 System peripheral: Intel Corporation Sandy Bridge DMA Channel 5 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 10
+	Region 0: Memory at fbf08000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.6 System peripheral: Intel Corporation Sandy Bridge DMA Channel 6 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin C routed to IRQ 5
+	Region 0: Memory at fbf04000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:04.7 System peripheral: Intel Corporation Sandy Bridge DMA Channel 7 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin D routed to IRQ 11
+	Region 0: Memory at fbf00000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [80] MSI-X: Enable- Mask- TabSize=1
+		Vector table: BAR=0 offset=00002000
+		PBA: BAR=0 offset=00003000
+	Capabilities: [90] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+80:05.0 System peripheral: Intel Corporation Sandy Bridge Address Map, VTd_Misc, System Management (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+80:05.2 System peripheral: Intel Corporation Sandy Bridge Control Status and Global Errors (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop+
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+80:05.4 PIC: Intel Corporation Sandy Bridge I/O APIC (rev 07) (prog-if 20 [IO(X)-APIC])
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Latency: 0, Cache Line Size: 64 bytes
+	Region 0: Memory at fbf20000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [6c] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 PME-Enable- DSel=0 DScale=0 PME-
+
+ff:08.0 System peripheral: Intel Corporation Sandy Bridge QPI Link 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:08.3 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [100] Unknown (11)
+
+ff:08.4 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:09.0 System peripheral: Intel Corporation Sandy Bridge QPI Link 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:09.3 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+	Capabilities: [100] Unknown (11)
+
+ff:09.4 System peripheral: Intel Corporation Sandy Bridge QPI Link Reut 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0a.0 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0a.1 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0a.2 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0a.3 System peripheral: Intel Corporation Sandy Bridge Power Control Unit 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0b.0 System peripheral: Intel Corporation Sandy Bridge Interrupt Control Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0b.3 System peripheral: Intel Corporation Sandy Bridge Semaphore and Scratchpad Configuration Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.0 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.1 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.2 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.3 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller System Address Decoder 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0c.7 System peripheral: Intel Corporation Sandy Bridge System Address Decoder (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0d.0 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0d.1 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0d.2 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0d.3 System peripheral: Intel Corporation Sandy Bridge Unicast Register 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0d.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller System Address Decoder 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0e.0 System peripheral: Intel Corporation Sandy Bridge Processor Home Agent (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0e.1 Performance counters: Intel Corporation Sandy Bridge Processor Home Agent Performance Monitoring (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:0f.0 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.1 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller RAS Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.2 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.3 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.4 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.5 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:0f.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Target Address Decoder 4 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:10.0 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.1 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.2 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 0 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.3 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 1 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.4 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.5 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller Channel 0-3 Thermal Control 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.6 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 2 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:10.7 System peripheral: Intel Corporation Sandy Bridge Integrated Memory Controller ERROR Registers 3 (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+	Capabilities: [40] Express Unknown type IRQ 0
+		Device: Supported: MaxPayload 128 bytes, PhantFunc 0, ExtTag-
+		Device: Latency L0s <64ns, L1 <1us
+		Device: Errors: Correctable- Non-Fatal- Fatal- Unsupported-
+		Device: RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+		Device: MaxPayload 128 bytes, MaxReadReq 128 bytes
+		Link: Supported Speed unknown, Width x0, ASPM unknown, Port 0
+		Link: Latency L0s <64ns, L1 <1us
+		Link: ASPM Disabled CommClk- ExtSynch-
+		Link: Speed unknown, Width x0
+
+ff:11.0 System peripheral: Intel Corporation Sandy Bridge DDRIO (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV+ VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:13.0 System peripheral: Intel Corporation Sandy Bridge R2PCIe (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:13.1 Performance counters: Intel Corporation Sandy Bridge Ring to PCI Express Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:13.4 Performance counters: Intel Corporation Sandy Bridge QuickPath Interconnect Agent Ring Registers (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:13.5 Performance counters: Intel Corporation Sandy Bridge Ring to QuickPath Interconnect Link 0 Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+
+ff:13.6 System peripheral: Intel Corporation Sandy Bridge Ring to QuickPath Interconnect Link 1 Performance Monitor (rev 07)
+	Subsystem: Super Micro Computer Inc Unknown device 062f
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B-
+	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR-
+

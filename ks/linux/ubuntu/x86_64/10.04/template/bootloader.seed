@@ -1,0 +1,6 @@
+########################################################
+# Boot loader installation
+########################################################
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean false

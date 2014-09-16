@@ -1,0 +1,57 @@
+  PID TTY      STAT   TIME COMMAND
+    2 ?        S      0:00 [kthreadd]
+    4 ?        S      0:00  \_ [ksoftirqd/0]
+    5 ?        S      0:00  \_ [watchdog/0]
+    3 ?        S      0:00  \_ [migration/0]
+  134 ?        S      0:00  \_ [async/mgr]
+  144 ?        S      0:00  \_ [xenwatch]
+   99 ?        S      0:00  \_ [events/0]
+  131 ?        S      0:00  \_ [khelper]
+  145 ?        S      0:00  \_ [xenbus]
+  266 ?        S      0:00  \_ [kacpid]
+  232 ?        S      0:00  \_ [bdi-default]
+  267 ?        S      0:00  \_ [kacpi_notify]
+  233 ?        S      0:00  \_ [kblockd/0]
+  268 ?        S      0:00  \_ [kacpi_hotplug]
+  230 ?        S      0:00  \_ [sync_supers]
+  566 ?        S      0:00  \_ [kseriod]
+  871 ?        S      0:00  \_ [khungtaskd]
+  872 ?        S      0:01  \_ [kswapd0]
+  873 ?        S      0:00  \_ [aio/0]
+  905 ?        S      0:00  \_ [crypto/0]
+ 1830 ?        S      0:00  \_ [net_accel/0]
+ 1825 ?        S      0:00  \_ [netback/1]
+ 1826 ?        S      0:00  \_ [netback/2]
+ 1824 ?        S      0:00  \_ [netback/0]
+ 1827 ?        S      0:00  \_ [netback/3]
+ 1863 ?        S      0:00  \_ [pciback_workque]
+ 1909 ?        S      0:00  \_ [kpsmoused]
+ 4075 ?        S      0:00  \_ [ata/0]
+ 4107 ?        S      0:00  \_ [ata_aux]
+ 4115 ?        S      0:00  \_ [scsi_eh_0]
+ 4122 ?        S      0:00  \_ [scsi_eh_3]
+ 4124 ?        S      0:00  \_ [scsi_eh_4]
+ 4118 ?        S      0:00  \_ [scsi_eh_1]
+ 4120 ?        S      0:00  \_ [scsi_eh_2]
+ 4126 ?        S      0:00  \_ [scsi_eh_5]
+ 9582 ?        S      0:00  \_ [khubd]
+ 9577 ?        S      0:00  \_ [ksuspend_usbd]
+12811 ?        S      0:00  \_ [usbhid_resumer]
+12928 ?        S      0:00  \_ [kstriped]
+14737 ?        S      0:02  \_ [flush-8:0]
+22292 ?        S      0:00  \_ [kjournald]
+    1 ?        Ss     0:00 init         
+ 1973 ?        S<s    0:19 udevd --daemon
+14525 ?        S      0:00 portmap
+14533 ?        Ss     0:00 /bin/bash /opt/xensource/installer/preinit
+14547 ?        S      0:21  \_ python /opt/xensource/installer/init --console=ttyS0,115200n8 --console=tty0 --install --answerfile=http://10.24.4.84/pxe/ks/linux/xenserver/6.0.2/unattend.xml --reboot
+22313 ?        S      0:00      \_ sh -c ps axf >/tmp/install-cYr7zB/var/log/installer/processes-log
+22314 ?        R      0:00          \_ ps axf
+14534 tty2     Ss+    0:00 /bin/sh --
+14536 ?        Ss     0:00 /sbin/klogd -n
+14537 tty4     Ss+    0:00 /usr/bin/tail -F /var/log/messages
+14535 ?        Ss     0:00 /sbin/syslogd -n -m 0
+14607 ?        Ss     0:00 dhclient -pf /var/run/dhclient.eth3.pid eth3
+14634 ?        Ss     0:00 dhclient -pf /var/run/dhclient.eth2.pid eth2
+14661 ?        Ss     0:00 dhclient -pf /var/run/dhclient.eth1.pid eth1
+14693 ?        Ss     0:00 dhclient -pf /var/run/dhclient.eth0.pid eth0

@@ -1,0 +1,7 @@
+#!ipxe
+#http://www.richud.com/wiki/Network_iPXE_dnsmasq_Examples_PXE_BOOT
+set use-cached 1
+dhcp
+set 209:string pxelinux.cfg/default
+set 210:string http://10.24.4.97/pxe/
+boot pxelinux.0

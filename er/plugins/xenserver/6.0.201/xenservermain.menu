@@ -1,0 +1,16 @@
+LABEL 6.0.201-manual
+	KERNEL http://10.24.4.4/os/linux/xenserver/6.0.201/boot/pxelinux/mboot.c32
+	APPEND -c er/plugins/xenserver/6.0.201/boot-manual.cfg
+	TEXT HELP
+                 Install Citrix XenServer 6.0.201
+                 Default Root Partion size is 100GB
+	ENDTEXT
+
+LABEL 6.0.201-unattend
+	KERNEL http://10.24.4.4/os/linux/xenserver/6.0.201/boot/pxelinux/mboot.c32
+	APPEND -c er/plugins/xenserver/6.0.201/boot-unattend.cfg
+	TEXT HELP
+                 (answerfile_device=eth0)
+                 answerfile=unattend.xml
+                 root_size=100GB
+	ENDTEXT

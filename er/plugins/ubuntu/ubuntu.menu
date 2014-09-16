@@ -1,0 +1,14 @@
+MENU BEGIN UBUNTUINSTALL
+MENU LABEL ^Ubuntu
+# ------====> Include Menu Settings <====------
+#MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+#MENU BACKGROUND er/plugins/ubuntu/ubuntu.png
+
+#MENU INCLUDE er/plugins/ubuntu/i386/ubuntumain.menu
+MENU INCLUDE er/plugins/ubuntu/x86_64/ubuntumain.menu
+  
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END
