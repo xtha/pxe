@@ -1,0 +1,4 @@
+########################################################
+# Finishing up the installation
+########################################################
+d-i finish-install/reboot_in_progress note

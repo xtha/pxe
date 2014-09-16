@@ -1,0 +1,7 @@
+# https://help.ubuntu.com/10.04/installation-guide/example-preseed.txt
+###################################################
+# Locale sets language and country.
+###################################################
+d-i debian-installer/locale string en_US
+d-i debian-installer/language string en
+d-i debian-installer/country string US
