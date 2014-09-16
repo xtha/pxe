@@ -1,14 +1,14 @@
 d-i preseed/include string \
-template/locale.seed \
-template/keyboard.seed \
-template/network.seed \
-template/mirror.seed \
-template/apt.seed \
-template/packages.seed \
-template/clock.seed \
-template/partition.seed \
-template/installer.seed \
-template/account.seed \
-template/late_cmd.seed \
-template/finish_install.seed \
-template/bootloader.seed
+locale.seed \
+keyboard.seed \
+network.seed \
+mirror.seed \
+apt.seed \
+packages.seed \
+clock.seed \
+partition.seed \
+installer.seed \
+account.seed \
+late_cmd.seed \
+finish_install.seed \
+bootloader.seed

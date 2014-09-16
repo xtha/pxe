@@ -5,9 +5,9 @@ d-i mirror/protocol string http
 d-i mirror/country string manual
 d-i mirror/http/hostname string 10.24.4.4
 d-i preseed/include_command string \
-osrelease=$(head -n 1 /etc/issue | cut -d' ' -f2 | cut -d'.' -f1-2); \
-echo "d-i mirror/http/directory string /os/linux/ubuntu/x86_64/${osrelease}";
-#lsb_release -a
+osrelease=$(grep RELEASE /etc/lsb-release | cut -d'=' -f2); \
+echo "mirror-${osrelease}.seed";
+#http://serverfault.com/questions/528582/debian-ubuntu-set-preseed-mirror-variable-via-early-run-command
 #http://www.ubuntuka.com/how-to-find-out-ubuntu-version/
 #d-i mirror/suite string lucid
 #d-i mirror/udeb/suite string lucid
