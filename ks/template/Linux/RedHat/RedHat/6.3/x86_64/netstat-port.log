@@ -1,0 +1,31 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      1438/rpcbind        
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      2907/sshd           
+tcp        0      0 127.0.0.1:631               0.0.0.0:*                   LISTEN      1681/cupsd          
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1880/master         
+tcp        0      0 0.0.0.0:46395               0.0.0.0:*                   LISTEN      1604/rpc.statd      
+tcp        0      0 10.1.1.43:22                192.168.9.6:55265           ESTABLISHED 2866/sshd           
+tcp        0      0 :::5989                     :::*                        LISTEN      1960/cimservermain  
+tcp        0      0 :::35339                    :::*                        LISTEN      1604/rpc.statd      
+tcp        0      0 :::111                      :::*                        LISTEN      1438/rpcbind        
+tcp        0      0 :::22                       :::*                        LISTEN      2907/sshd           
+tcp        0      0 ::1:631                     :::*                        LISTEN      1681/cupsd          
+tcp        0      0 ::1:25                      :::*                        LISTEN      1880/master         
+udp        0      0 0.0.0.0:45256               0.0.0.0:*                               1604/rpc.statd      
+udp        0      0 0.0.0.0:5353                0.0.0.0:*                               1574/avahi-daemon   
+udp        0      0 0.0.0.0:111                 0.0.0.0:*                               1438/rpcbind        
+udp        0      0 0.0.0.0:631                 0.0.0.0:*                               1681/cupsd          
+udp        0      0 0.0.0.0:51706               0.0.0.0:*                               1574/avahi-daemon   
+udp        0      0 10.1.1.43:123               0.0.0.0:*                               1800/ntpd           
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               1800/ntpd           
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               1800/ntpd           
+udp        0      0 0.0.0.0:765                 0.0.0.0:*                               1438/rpcbind        
+udp        0      0 0.0.0.0:932                 0.0.0.0:*                               1604/rpc.statd      
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               1578/dhclient       
+udp        0      0 :::54381                    :::*                                    1604/rpc.statd      
+udp        0      0 :::111                      :::*                                    1438/rpcbind        
+udp        0      0 fe80::62ff:fe9d:17:123      :::*                                    1800/ntpd           
+udp        0      0 ::1:123                     :::*                                    1800/ntpd           
+udp        0      0 :::123                      :::*                                    1800/ntpd           
+udp        0      0 :::765                      :::*                                    1438/rpcbind        

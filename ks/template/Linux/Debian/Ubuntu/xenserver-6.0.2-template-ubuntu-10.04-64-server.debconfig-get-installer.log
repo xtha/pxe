@@ -1,0 +1,1251 @@
+# for internal use; can be preseeded
+partman-basicfilesystems	partman/automount	boolean	false
+# Services to use:
+# Choices: security updates (from security.ubuntu.com), volatile updates (from volatile.debian.org)
+apt-setup-udeb	apt-setup/services-select	multiselect	security
+# Non-existing physical volume
+partman-auto-lvm	partman-auto-lvm/no_such_pv	error	
+# NFS mount failed
+d-i	initrd-kickseed/nfs-mount-failed	error	
+# Keyboard layout:
+# Choices: USA, USA - Alternative international (former us_intl), USA - Cherokee, USA - Classic Dvorak, USA - Colemak, USA - Dvorak, USA - Dvorak international, USA - Group toggle on multiply/divide key, USA - International (AltGr dead keys), USA - International (with dead keys), USA - Left handed Dvorak, USA - Macintosh, USA - Programmer Dvorak, USA - Right handed Dvorak, USA - Russian phonetic, USA - Serbian, USA - With EuroSign on 5
+d-i	console-setup/variant	select	USA
+# Install GRUB?
+grub-installer	grub-installer/grub_not_mature_on_this_platform	boolean	false
+# Active devices for the RAID array:
+# Choices: 
+partman-md	partman-md/raiddevs	multiselect	
+# Web server started, but network not running
+d-i	save-logs/no_network	note	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/invalidrel	error	
+# for internal use only
+d-i	debian-installer/consoledisplay	string	console-setup
+# Unable to configure GRUB
+grub-installer	grub-installer/sataraid-error	error	
+# Driver needed for your disk drive:
+# Choices: continue with no disk drive, , none of the above
+disk-detect	disk-detect/module_select	select	continue with no disk drive
+# Use software from the "universe" component?
+apt-mirror-setup	apt-setup/universe	boolean	true
+# for internal use; can be preseeded
+apt-setup-udeb	apt-setup/security_path	string	/ubuntu
+# for internal use only
+# Choices: 
+d-i	debian-installer/fallbacklocale	select	en_US.UTF-8
+# 
+d-i	debian-installer/shell-plugin	terminal	
+# Activate Serial ATA RAID devices?
+disk-detect	disk-detect/activate_dmraid	boolean	true
+# for internal use; can be preseeded
+disk-detect	disk-detect/multipath/enable	boolean	false
+# Allow login as root?
+user-setup-udeb	passwd/root-login	boolean	false
+# Choose a country, territory or area:
+# Choices: Antigua and Barbuda, Australia, Botswana, Canada, Hong Kong, India, Ireland, New Zealand, Nigeria, Philippines, Singapore, South Africa, United Kingdom, United States, Zimbabwe, other
+d-i	localechooser/shortlist	select	US
+# Identical mount points for two file systems
+partman-target	partman-target/same_mountpoint	error	
+# Keep unsupported options ()?
+d-i	console-setup/unsupported_options	boolean	true
+# Do you intend to use FireWire Ethernet?
+d-i	ethdetect/use_firewire_ethernet	boolean	false
+# Auto-configure network with DHCP?
+d-i	netcfg/use_dhcp	boolean	true
+# Go back to the menu and correct errors?
+partman-basicfilesystems	partman-basicfilesystems/check_failed	boolean	
+# Partitioning scheme:
+# Choices: All files in one partition (recommended for new users), Separate /home partition, Separate /home\, /usr\, /var\, and /tmp partitions
+partman-auto	partman-auto/choose_recipe	select	/lib/partman/recipes/30atomic
+# Type of encryption key for this partition:
+# Choices: 
+partman-crypto	partman-crypto/keytype	select	
+# The size entered is invalid
+partman-partitioning	partman-partitioning/bad_new_size	error	
+# Volume group to reduce:
+# Choices: 
+partman-lvm	partman-lvm/vgreduce_names	select	
+# Failed to create a file system
+partman-reiserfs	partman-reiserfs/create_failed	error	
+# Devices for the new volume group:
+# Choices: 
+partman-lvm	partman-lvm/vgcreate_parts	multiselect	
+# Cannot install base system
+bootstrap-base	base-installer/cannot_install	error	
+# Failed to partition the selected disk
+partman-auto	partman-auto/autopartitioning_failed	error	
+# Write previous changes to disk and continue?
+partman-partitioning	partman-partitioning/confirm_copy	boolean	
+# Unexpected error while creating volume group
+partman-auto-lvm	partman-auto-lvm/vg_create_error	error	
+# Hostname:
+d-i	netcfg/get_hostname	string	localhost
+# for internal use; can be preseeded
+d-i	preseed/include_command	string	
+# Select a location in your time zone:
+# Choices: Lisbon, Madeira Islands, Azores, Select from worldwide list
+tzsetup-udeb	tzsetup/country/PT	select	
+# Error while deleting volume group
+partman-lvm	partman-lvm/vgdelete_error	error	
+# Proceed to install crypto components despite insufficient memory?
+partman-crypto	partman-crypto/install_udebs_low_mem	boolean	
+# Unusable free space
+partman-auto	partman-auto/unusable_space	error	
+# Is this information correct?
+d-i	netcfg/confirm_static	boolean	true
+# Choose a country, territory or area:
+# Choices: Canada, Mexico, Saint Pierre and Miquelon, United States
+d-i	localechooser/countrylist/North_America	select	
+# Choose a country, territory or area:
+# Choices: Greece, Cyprus, other
+d-i	localechooser/shortlist/el	select	
+# Is the system clock set to UTC?
+clock-setup	clock-setup/utc	boolean	true
+# Is this time zone correct?
+tzsetup-udeb	tzsetup/detected	boolean	true
+# Initialization vector generation algorithm for this partition:
+# Choices: 
+partman-crypto	partman-crypto/ivalgorithm	select	
+# Choose a country, territory or area:
+# Choices: Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Congo, Congo\, The Democratic Republic of the, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Malawi, Mali, Mauritania, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, Sao Tome and Principe, Senegal, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania\, United Republic of, Togo, Tunisia, Uganda, Western Sahara, Zambia, Zimbabwe
+d-i	localechooser/countrylist/Africa	select	
+# Passphrase input error
+partman-crypto	partman-crypto/passphrase-mismatch	error	
+# Continue with partitioning?
+partman-partitioning	partman-partitioning/unknown_label	boolean	true
+# Username for your account:
+user-setup-udeb	passwd/username	string	zh
+# Required encryption options missing
+partman-crypto	partman-crypto/options_missing	error	
+# Error while creating a new logical volume
+partman-lvm	partman-lvm/lvcreate_error	error	
+# iSCSI login failed
+partman-iscsi	partman-iscsi/login/failed	error	
+# Choose a country, territory or area:
+# Choices: Finland, Sweden, other
+d-i	localechooser/shortlist/sv	select	
+# Resize operation failure
+partman-partitioning	partman-partitioning/new_size_commit_failed	error	
+# Choose a country, territory or area:
+# Choices: Cyprus, Turkey, other
+d-i	localechooser/shortlist/tr	select	
+# Interactive shell
+d-i	di-utils-shell/do-shell	note	
+# 
+# Choices: 
+partman-base	partman/exception_handler	select	
+# Do you want to resume partitioning?
+partman-target	partman-target/mount_failed	boolean	true
+# iSCSI configuration actions
+# Choices: Log into iSCSI targets, Finish
+partman-iscsi	partman-iscsi/mainmenu	select	
+# for internal use; may be preseeded
+# Choices: main, restricted, universe, multiverse
+d-i	mirror/udeb/components	multiselect	main, restricted
+# for internal use; can be preseeded
+partman-auto	partman-auto/expert_recipe	string	
+# for internal use; relative boot directory for grub4dos
+grub-installer	grub-installer/bootdev_directory	string	
+# How to use this partition:
+# Choices: 
+partman-target	partman-target/choose_method	select	
+# Ubuntu archive mirror directory:
+d-i	mirror/http/directory	string	/os/linux/ubuntu/10.04.4/x86_64/server
+# Kernel to install:
+# Choices: linux-generic,linux-server,linux-virtual,linux-image-3.0.0-13-generic,linux-image-3.0.0-13-server,linux-image-3.0.0-13-virtual,linux-image-3.0.0-14-generic,linux-image-3.0.0-14-server,linux-image-3.0.0-14-virtual,linux-image-3.0.0-15-generic,linux-image-3.0.0-15-server,linux-image-3.0.0-15-virtual,linux-image-3.0.0-16-generic,linux-image-3.0.0-16-server,linux-image-3.0.0-16-virtual,linux-image-3.0.0-17-generic,linux-image-3.0.0-17-server,linux-image-3.0.0-17-virtual,linux-image-3.0.0-19-generic,linux-image-3.0.0-19-server,linux-image-3.0.0-19-virtual,linux-image-3.0.0-20-generic,linux-image-3.0.0-20-server,linux-image-3.0.0-20-virtual,linux-image-3.0.0-21-generic,linux-image-3.0.0-21-server,linux-image-3.0.0-21-virtual,linux-image-3.0.0-22-generic,linux-image-3.0.0-22-server,linux-image-3.0.0-22-virtual,linux-image-3.0.0-24-generic,linux-image-3.0.0-24-server,linux-image-3.0.0-24-virtual,linux-image-3.0.0-25-generic,linux-image-3.0.0-25-server,linux-image-3.0.0-25-virtual,linux-image-3.0.0-26-generic,linux-image-3.0.0-26-server,linux-image-3.0.0-26-virtual,linux-image-3.0.0-28-generic,linux-image-3.0.0-28-server,linux-image-3.0.0-28-virtual,linux-image-3.0.0-29-generic,linux-image-3.0.0-29-server,linux-image-3.0.0-29-virtual,linux-image-3.0.0-30-generic,linux-image-3.0.0-30-server,linux-image-3.0.0-30-virtual,linux-image-3.0.0-31-generic,linux-image-3.0.0-31-server,linux-image-3.0.0-31-virtual,linux-image-3.0.0-32-generic,linux-image-3.0.0-32-server,linux-image-3.0.0-32-virtual,linux-image-generic,linux-image-generic-lts-backport-maverick,linux-image-generic-lts-backport-natty,linux-image-generic-lts-backport-oneiric,linux-image-server,linux-image-server-lts-backport-maverick,linux-image-server-lts-backport-natty,linux-image-server-lts-backport-oneiric,linux-image-virtual,linux-image-virtual-lts-backport-maverick,linux-image-virtual-lts-backport-natty,linux-image-virtual-lts-backport-oneiric,linux-image-3.0.0-32-virtual,linux-image-3.0.0-32-server,linux-image-3.0.0-32-generic,linux-image-3.0.0-31-virtual,linux-image-3.0.0-31-server,linux-image-3.0.0-31-generic,linux-image-3.0.0-30-virtual,linux-image-3.0.0-30-server,linux-image-3.0.0-30-generic,linux-image-3.0.0-29-virtual,linux-image-3.0.0-29-server,linux-image-3.0.0-29-generic,linux-image-3.0.0-28-virtual,linux-image-3.0.0-28-server,linux-image-3.0.0-28-generic,linux-image-3.0.0-26-virtual,linux-image-3.0.0-26-server,linux-image-3.0.0-26-generic,linux-image-3.0.0-25-virtual,linux-image-3.0.0-25-server,linux-image-3.0.0-25-generic,linux-image-3.0.0-24-virtual,linux-image-3.0.0-24-server,linux-image-3.0.0-24-generic,linux-image-3.0.0-22-virtual,linux-image-3.0.0-22-server,linux-image-3.0.0-22-generic,linux-image-3.0.0-21-virtual,linux-image-3.0.0-21-server,linux-image-3.0.0-21-generic,linux-image-3.0.0-20-virtual,linux-image-3.0.0-20-server,linux-image-3.0.0-20-generic,linux-image-3.0.0-19-virtual,linux-image-3.0.0-19-server,linux-image-3.0.0-19-generic,linux-image-3.0.0-17-virtual,linux-image-3.0.0-17-server,linux-image-3.0.0-17-generic,linux-image-3.0.0-16-virtual,linux-image-3.0.0-16-server,linux-image-3.0.0-16-generic,linux-image-3.0.0-15-virtual,linux-image-3.0.0-15-server,linux-image-3.0.0-15-generic,linux-image-3.0.0-14-virtual,linux-image-3.0.0-14-server,linux-image-3.0.0-14-generic,linux-image-3.0.0-13-virtual,linux-image-3.0.0-13-server,linux-image-3.0.0-13-generic,linux-image-2.6.38-16-virtual,linux-image-2.6.38-16-server,linux-image-2.6.38-16-generic,linux-image-2.6.38-15-virtual,linux-image-2.6.38-15-server,linux-image-2.6.38-15-generic,linux-image-2.6.38-13-virtual,linux-image-2.6.38-13-server,linux-image-2.6.38-13-generic,linux-image-2.6.38-12-virtual,linux-image-2.6.38-12-server,linux-image-2.6.38-12-generic,linux-image-2.6.38-11-virtual,linux-image-2.6.38-11-server,linux-image-2.6.38-11-generic,linux-image-2.6.35-32-virtual,linux-image-2.6.35-32-server,linux-image-2.6.35-32-generic,linux-image-2.6.35-31-virtual,linux-image-2.6.35-31-server,linux-image-2.6.35-31-generic,linux-image-2.6.35-30-virtual,linux-image-2.6.35-30-server,linux-image-2.6.35-30-generic,linux-image-2.6.35-25-virtual,linux-image-2.6.35-25-server,linux-image-2.6.35-25-generic,linux-image-2.6.32-54-virtual,linux-image-2.6.32-54-server,linux-image-2.6.32-54-generic,linux-image-2.6.32-53-virtual,linux-image-2.6.32-53-server,linux-image-2.6.32-53-generic,linux-image-2.6.32-52-virtual,linux-image-2.6.32-52-server,linux-image-2.6.32-52-generic,linux-image-2.6.32-51-virtual,linux-image-2.6.32-51-server,linux-image-2.6.32-51-generic,linux-image-2.6.32-50-virtual,linux-image-2.6.32-50-server,linux-image-2.6.32-50-generic,linux-image-2.6.32-49-virtual,linux-image-2.6.32-49-server,linux-image-2.6.32-49-generic,linux-image-2.6.32-48-virtual,linux-image-2.6.32-48-server,linux-image-2.6.32-48-generic,linux-image-2.6.32-47-virtual,linux-image-2.6.32-47-server,linux-image-2.6.32-47-generic,linux-image-2.6.32-46-virtual,linux-image-2.6.32-46-server,linux-image-2.6.32-46-generic,linux-image-2.6.32-45-virtual,linux-image-2.6.32-45-server,linux-image-2.6.32-45-generic,linux-image-2.6.32-44-virtual,linux-image-2.6.32-44-server,linux-image-2.6.32-44-generic,linux-image-2.6.32-43-virtual,linux-image-2.6.32-43-server,linux-image-2.6.32-43-generic,linux-image-2.6.32-42-virtual,linux-image-2.6.32-42-server,linux-image-2.6.32-42-generic,linux-image-2.6.32-41-virtual,linux-image-2.6.32-41-server,linux-image-2.6.32-41-generic,linux-image-2.6.32-40-virtual,linux-image-2.6.32-40-server,linux-image-2.6.32-40-generic,linux-image-2.6.32-39-virtual,linux-image-2.6.32-39-server,linux-image-2.6.32-39-generic,linux-image-2.6.32-38-virtual,linux-image-2.6.32-38-server,linux-image-2.6.32-38-generic,linux-image-2.6.32-37-virtual,linux-image-2.6.32-37-server,linux-image-2.6.32-37-generic,linux-image-2.6.32-36-virtual,linux-image-2.6.32-36-server,linux-image-2.6.32-36-preempt,linux-image-2.6.32-36-generic,linux-image-2.6.32-35-virtual,linux-image-2.6.32-35-server,linux-image-2.6.32-35-preempt,linux-image-2.6.32-35-generic,linux-image-2.6.32-34-virtual,linux-image-2.6.32-34-server,linux-image-2.6.32-34-preempt,linux-image-2.6.32-34-generic,linux-image-2.6.32-33-virtual,linux-image-2.6.32-33-server,linux-image-2.6.32-33-preempt,linux-image-2.6.32-33-generic,linux-image-2.6.32-32-virtual,linux-image-2.6.32-32-server,linux-image-2.6.32-32-preempt,linux-image-2.6.32-32-generic,linux-image-2.6.32-30-virtual,linux-image-2.6.32-30-server,linux-image-2.6.32-30-preempt,linux-image-2.6.32-30-generic,linux-image-2.6.32-29-virtual,linux-image-2.6.32-29-server,linux-image-2.6.32-29-preempt,linux-image-2.6.32-29-generic,linux-image-2.6.32-28-virtual,linux-image-2.6.32-28-server,linux-image-2.6.32-28-preempt,linux-image-2.6.32-28-generic,linux-image-2.6.32-27-virtual,linux-image-2.6.32-27-server,linux-image-2.6.32-27-preempt,linux-image-2.6.32-27-generic,linux-image-2.6.32-26-virtual,linux-image-2.6.32-26-server,linux-image-2.6.32-26-preempt,linux-image-2.6.32-26-generic,linux-image-2.6.32-25-virtual,linux-image-2.6.32-25-server,linux-image-2.6.32-25-preempt,linux-image-2.6.32-25-generic,linux-image-2.6.32-24-virtual,linux-image-2.6.32-24-server,linux-image-2.6.32-24-preempt,linux-image-2.6.32-24-generic,linux-image-2.6.32-22-virtual,linux-image-2.6.32-22-server,linux-image-2.6.32-22-preempt,linux-image-2.6.32-22-generic,linux-image-2.6.32-21-virtual,linux-image-2.6.32-21-server,linux-image-2.6.32-21-generic, none
+bootstrap-base	base-installer/kernel/image	select	linux-generic
+# Driver needed by your Ethernet card:
+# Choices: no ethernet card, , none of the above
+d-i	ethdetect/module_select	select	no ethernet card
+# Unable to automatically remove LVM data
+partman-lvm	partman-lvm/device_remove_lvm_span	error	
+# No iSCSI targets discovered
+partman-iscsi	partman-iscsi/login/no_targets	error	
+# Encryption configuration failure
+partman-crypto	partman-crypto/crypto_root_needs_boot	error	
+# Volume group:
+# Choices: 
+partman-lvm	partman-lvm/lvcreate_vgnames	select	
+# Select a city in your time zone:
+# Choices: Jakarta, Pontianak, Makassar, Jayapura, Select from worldwide list
+tzsetup-udeb	tzsetup/country/ID	select	
+# Erasing data on  failed
+partman-crypto	partman-crypto/erase_failed	error	
+# Go back to the menu and resume partitioning?
+partman-efi	partman-efi/no_efi	boolean	
+# Number of active devices for the RAID array:
+partman-md	partman-md/raiddevcount	string	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/unknownrelsig	error	
+# Choose an installation step:
+# Choices: 
+d-i	debian-installer/missing-provide	select	${DEFAULT}
+# Ubuntu archive mirror country:
+# Choices: enter information manually, Andorra, United Arab Emirates, Afghanistan, Antigua and Barbuda, Anguilla, Albania, Armenia, Netherlands Antilles, Angola, Antarctica, Argentina, American Samoa, Austria, Australia, Aruba, AX, Azerbaijan, Bosnia and Herzegovina, Barbados, Bangladesh, Belgium, Burkina Faso, Bulgaria, Bahrain, Burundi, Benin, BL, Bermuda, Brunei Darussalam, Bolivia, Brazil, Bahamas, Bhutan, Bouvet Island, Botswana, Belarus, Belize, Canada, Cocos (Keeling) Islands, Congo\, The Democratic Republic of the, Central African Republic, Congo, Switzerland, CI, Cook Islands, Chile, Cameroon, China, Colombia, Costa Rica, Cuba, Cape Verde, Christmas Island, Cyprus, Czech Republic, Germany, Djibouti, Denmark, Dominica, Dominican Republic, Algeria, Ecuador, Estonia, Egypt, Western Sahara, Eritrea, Spain, Ethiopia, Finland, Fiji, Falkland Islands (Malvinas), Micronesia\, Federated States of, Faroe Islands, France, Gabon, United Kingdom, Grenada, Georgia, French Guiana, Guernsey, Ghana, Gibraltar, Greenland, Gambia, Guinea, Guadeloupe, Equatorial Guinea, Greece, South Georgia and the South Sandwich Islands, Guatemala, Guam, Guinea-Bissau, Guyana, Hong Kong, Heard Island and McDonald Islands, Honduras, Croatia, Haiti, Hungary, Indonesia, Ireland, Israel, Isle of Man, India, British Indian Ocean Territory, Iraq, Iran\, Islamic Republic of, Iceland, Italy, Jersey, Jamaica, Jordan, Japan, Kenya, Kyrgyzstan, Cambodia, Kiribati, Comoros, Saint Kitts and Nevis, Korea\, Democratic People's Republic of, Korea\, Republic of, Kuwait, Cayman Islands, Kazakhstan, Lao People's Democratic Republic, Lebanon, Saint Lucia, Liechtenstein, Sri Lanka, Liberia, Lesotho, Lithuania, Luxembourg, Latvia, Libya, Morocco, Monaco, Moldova, Montenegro, Saint Martin (French part), Madagascar, Marshall Islands, Macedonia\, Republic of, Mali, Myanmar, Mongolia, Macao, Northern Mariana Islands, Martinique, Mauritania, Montserrat, Malta, Mauritius, Maldives, Malawi, Mexico, Malaysia, Mozambique, Namibia, New Caledonia, Niger, Norfolk Island, Nigeria, Nicaragua, Netherlands, Norway, Nepal, Nauru, Niue, New Zealand, Oman, Panama, Peru, French Polynesia, Papua New Guinea, Philippines, Pakistan, Poland, Saint Pierre and Miquelon, Pitcairn, Puerto Rico, Palestinian Territory\, Occupied, Portugal, Palau, Paraguay, Qatar, Reunion, Romania, Serbia, Russian Federation, Rwanda, Saudi Arabia, Solomon Islands, Seychelles, Sudan, Sweden, Singapore, Saint Helena, Slovenia, Svalbard and Jan Mayen, Slovakia, Sierra Leone, San Marino, Senegal, Somalia, Suriname, Sao Tome and Principe, El Salvador, Syrian Arab Republic, Swaziland, Turks and Caicos Islands, Chad, French Southern Territories, Togo, Thailand, Tajikistan, Tokelau, Timor-Leste, Turkmenistan, Tunisia, Tonga, Turkey, Trinidad and Tobago, Tuvalu, Taiwan, Tanzania\, United Republic of, Ukraine, Uganda, United States Minor Outlying Islands, United States, Uruguay, Uzbekistan, Holy See (Vatican City State), Saint Vincent and the Grenadines, Venezuela, Virgin Islands\, British, Virgin Islands\, U.S., Viet Nam, Vanuatu, Wallis and Futuna, Samoa, Yemen, Mayotte, South Africa, Zambia, Zimbabwe
+d-i	mirror/http/countries	select	manual
+# for internal use only
+user-setup-udeb	passwd/user-default-groups	string	adm cdrom dialout lpadmin plugdev sambashare
+# Select a location in your time zone:
+# Choices: Guayaquil, Galapagos, Select from worldwide list
+tzsetup-udeb	tzsetup/country/EC	select	
+# Not installing to unclean target
+base-installer	base-installer/unclean_target_cancel	error	
+# No partitions to encrypt
+partman-crypto	partman-crypto/nothing_to_setup	note	
+# New partition size:
+partman-partitioning	partman-partitioning/new_partition_size	string	some number
+# Failed to retrieve the preconfiguration file
+d-i	preseed/retrieve_error	error	
+# Directory in which to save debug logs:
+d-i	save-logs/directory	string	/mnt
+# Network autoconfiguration failed
+d-i	netcfg/dhcp_failed	note	
+# for internal use only
+d-i	debconf/showold	boolean	false
+# FTP proxy information (blank for none):
+d-i	mirror/ftp/proxy	string	
+# Really delete this software RAID device?
+partman-md	partman-md/deleteverify	boolean	false
+# for internal use only
+clock-setup	clock-setup/system-time-changed	boolean	true
+# for internal use only
+user-setup-udeb	user-setup/force-encrypt-home	boolean	false
+# for internal use; can be preseeded
+bootstrap-base	base-installer/kernel/linux/initramfs-generators	string	initramfs-tools yaird
+# New partition size:
+partman-partitioning	partman-partitioning/new_size	string	some number
+# Choose a country, territory or area:
+# Choices: Andorra, Spain, France, Italy, other
+d-i	localechooser/shortlist/ca	select	
+# Write the changes to the storage devices and configure RAID?
+d-i	partman-md/confirm_nooverwrite	boolean	false
+# Wireless ESSID for :
+d-i	netcfg/wireless_essid	string	
+# Logical volume:
+# Choices: 
+partman-lvm	partman-lvm/lvdelete_lvnames	select	
+# Unable to install the selected kernel
+bootstrap-base	base-installer/kernel/failed-install	error	
+# Unable to configure GRUB
+grub-installer	grub-installer/update-grub-failed	error	
+# Failed to create a file system
+partman-ext3	partman-ext3/create_failed	error	
+# PCMCIA resource range options:
+d-i	hw-detect/pcmcia_resources	string	
+# for internal use; can be preseeded
+# Choices: none, safe-upgrade, full-upgrade
+pkgsel	pkgsel/upgrade	select	safe-upgrade
+# Unreachable gateway
+d-i	netcfg/gateway_unreachable	error	
+# for internal use; can be preseeded
+grub-installer	grub-installer/skip	boolean	false
+# for internal use; can be preseeded
+bootstrap-base	base-installer/kernel/linux/extra-packages	string	
+# No RAID partitions available
+partman-md	partman-md/noparts	error	
+# Active devices for the RAID0 array:
+# Choices: 
+partman-md	partman-md/raid0devs	multiselect	
+# for internal use
+d-i	console-setup/modelcode	string	pc105
+# Volume group to extend:
+# Choices: 
+partman-lvm	partman-lvm/vgextend_names	select	
+# Setting firmware variables for automatic boot
+nobootloader	nobootloader/confirmation_powerpc_chrp_pegasos	note	
+# Failed to mount the floppy
+d-i	save-logs/floppy_mount_failed	error	
+# for internal use; can be preseeded
+apt-setup-udeb	apt-setup/volatile_host	string	volatile.debian.org
+# for internal use only
+d-i	debconf/language	string	en
+# NTP server to use:
+clock-setup	clock-setup/ntp-server	string	ntp.ubuntu.com
+# No physical volume defined in volume group
+partman-auto-lvm	partman-auto-lvm/no_pv_in_vg	error	
+# Choose a country, territory or area:
+# Choices: China, Taiwan, Singapore, Hong Kong, other
+d-i	localechooser/shortlist/zh_TW	select	
+# for internal use; can be preseeded
+d-i	oem-config/enable	boolean	false
+# Name server addresses:
+d-i	netcfg/get_nameservers	string	
+# Dummy template for preseeding unavailable questions
+d-i	debian-installer/dummy	string	
+# Additional parameters for module :
+d-i	hw-detect/retry_params	string	
+# Go back to the menu and correct this problem?
+partman-ext3	partman-ext3/boot_not_ext2_or_ext3	boolean	
+# for internal use only
+user-setup-udeb	user-setup/allow-password-empty	boolean	false
+# Encryption configuration failure
+partman-crypto	partman-crypto/crypto_boot_not_possible	error	
+# Primary network interface:
+# Choices: 
+d-i	netcfg/choose_interface	select	
+# Failed to download crypto components
+partman-crypto	partman-crypto/install_udebs_failure	error	
+# for internal use only
+user-setup-udeb	passwd/user-uid	string	
+# Choose a country, territory or area:
+# Choices: Argentina, Bolivia, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Spain, United States, Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Dominican Republic, Uruguay, Venezuela, other
+d-i	localechooser/shortlist/es	select	
+# RAID configuration failure
+partman-md	partman-md/commit_failed	error	
+# for internal use; can be preseeded
+d-i	preseed/run	string	
+# Write the changes to disks and configure LVM?
+d-i	partman-lvm/confirm_nooverwrite	boolean	false
+# Cannot save logs
+d-i	save-logs/bad_directory	error	
+# Choose a country, territory or area:
+# Choices: Belgium, Canada, France, Luxembourg, Switzerland, other
+d-i	localechooser/shortlist/fr	select	
+# Encryption configuration actions
+# Choices: Create encrypted volumes, Finish
+partman-crypto	partman-crypto/mainmenu	select	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/fallback-error	error	
+# for internal use; can be preseeded
+apt-setup-udeb	apt-setup/security_host	string	security.ubuntu.com
+# Insufficient memory
+d-i	lowmem/insufficient	error	
+# Device in use
+partman-base	partman-base/devicelocked	error	
+# No physical volumes selected
+partman-lvm	partman-lvm/vgreduce_nosel	error	
+# Failed to mount /target/proc
+nobootloader	nobootloader/mounterr	error	
+# Select disk to partition:
+# Choices: Virtual disk 1 (xvda) - 8.6 GB Xen Virtual Block Device
+partman-auto	partman-auto/select_disk	select	/var/lib/partman/devices/=dev=xvda
+# for internal use
+d-i	console-setup/fontsize	string	16
+# Ubuntu version to install:
+# Choices: dapper, hardy, intrepid, jaunty, karmic, lucid
+d-i	mirror/suite	select	lucid
+# Choose a country, territory or area:
+# Choices: China, Taiwan, Singapore, Hong Kong, other
+d-i	localechooser/shortlist/zh_CN	select	
+# Select your time zone:
+# Choices: Eastern, Central, Mountain, Pacific, Alaska, Hawaii, Arizona, East Indiana, Samoa, Select from worldwide list
+tzsetup-udeb	tzsetup/country/US	select	US/Eastern
+# Load missing firmware from removable media?
+d-i	hw-detect/load_firmware	boolean	true
+# Choose a country, territory or area:
+# Choices: Italy, Switzerland, other
+d-i	localechooser/shortlist/it	select	
+# No volume group found
+partman-lvm	partman-lvm/vgdelete_novg	error	
+# Encrypt your home directory?
+user-setup-udeb	user-setup/encrypt-home	boolean	false
+# Drivers to include in the initrd:
+# Choices: generic: include all available drivers, targeted: only include drivers needed for this system
+bootstrap-base	base-installer/initramfs-tools/driver-policy	select	most
+# Choose a country, territory or area:
+# Choices: Antarctica
+d-i	localechooser/countrylist/Antarctica	select	
+# Network configuration method:
+# Choices: Retry network autoconfiguration, Retry network autoconfiguration with a DHCP hostname, Configure network manually, , Do not configure the network at this time
+d-i	netcfg/dhcp_options	select	Configure network manually
+# Choose the next step in the install process:
+# Choices: Choose language, Configure the keyboard, Detect network hardware, Configure the network, Choose a mirror of the Ubuntu archive, Download installer components, Configure the clock, Detect disks, Partition disks, Install the base system, Set up users and passwords, Configure the package manager, Select and install software, Install the GRUB boot loader on a hard disk, Install the LILO boot loader on a hard disk, Continue without boot loader, Finish the installation, Change debconf priority, Save debug logs, Execute a shell, Abort the installation
+d-i	debian-installer/main-menu	select	Finish the installation
+# How to use this free space:
+# Choices: 
+partman-base	partman/free_space	select	
+# Ubuntu archive mirror hostname:
+d-i	mirror/ftp/hostname	string	
+# Error while reducing volume group
+partman-lvm	partman-lvm/vgreduce_error	error	
+# Select your time zone:
+# Choices: --- Africa ---, Abidjan, Accra, Addis Ababa, Algiers, Asmara, Bamako, Bangui, Banjul, Bissau, Blantyre, Brazzaville, Bujumbura, Cairo, Casablanca, Ceuta, Conakry, Dakar, Dar es Salaam, Djibouti, Douala, El Aaiun, Freetown, Gaborone, Harare, Johannesburg, Kampala, Khartoum, Kigali, Kinshasa, Lagos, Libreville, Lome, Luanda, Lubumbashi, Lusaka, Malabo, Maputo, Maseru, Mbabane, Mogadishu, Monrovia, Nairobi, Ndjamena, Niamey, Nouakchott, Ouagadougou, Porto-Novo, Sao Tome, Tripoli, Tunis, Windhoek, , --- America ---, Adak, Anchorage, Anguilla, Antigua, Araguaina, Argentina/Buenos Aires, Argentina/Catamarca, Argentina/Cordoba, Argentina/Jujuy, Argentina/La Rioja, Argentina/Mendoza, Argentina/Rio Gallegos, Argentina/Salta, Argentina/San Juan, Argentina/San Luis, Argentina/Tucuman, Argentina/Ushuaia, Aruba, Asuncion, Atikokan, Bahia, Barbados, Belem, Belize, Blanc-Sablon, Boa Vista, Bogota, Boise, Cambridge Bay, Campo Grande, Cancun, Caracas, Cayenne, Cayman, Chicago, Chihuahua, Costa Rica, Cuiaba, Curacao, Danmarkshavn, Dawson, Dawson Creek, Denver, Detroit, Dominica, Edmonton, Eirunepe, El Salvador, Fortaleza, Glace Bay, Godthab, Goose Bay, Grand Turk, Grenada, Guadeloupe, Guatemala, Guayaquil, Guyana, Halifax, Havana, Hermosillo, Indiana/Indianapolis, Indiana/Knox, Indiana/Marengo, Indiana/Petersburg, Indiana/Tell City, Indiana/Vevay, Indiana/Vincennes, Indiana/Winamac, Inuvik, Iqaluit, Jamaica, Juneau, Kentucky/Louisville, Kentucky/Monticello, La Paz, Lima, Los Angeles, Maceio, Managua, Manaus, Marigot, Martinique, Matamoros, Mazatlan, Menominee, Merida, Mexico City, Miquelon, Moncton, Monterrey, Montevideo, Montreal, Montserrat, Nassau, New York, Nipigon, Nome, Noronha, North Dakota/Center, North Dakota/New Salem, Ojinaga, Panama, Pangnirtung, Paramaribo, Phoenix, Port-au-Prince, Port of Spain, Porto Velho, Puerto Rico, Rainy River, Rankin Inlet, Recife, Regina, Resolute, Rio Branco, Santa Isabel, Santarem, Santiago, Santo Domingo, Sao Paulo, Scoresbysund, Shiprock, St Barthelemy, St Johns, St Kitts, St Lucia, St Thomas, St Vincent, Swift Current, Tegucigalpa, Thule, Thunder Bay, Tijuana, Toronto, Tortola, Vancouver, Whitehorse, Winnipeg, Yakutat, Yellowknife, , --- Antarctica ---, Casey, Davis, DumontDUrville, Macquarie, Mawson, McMurdo, Palmer, Rothera, South Pole, Syowa, Vostok, , --- Arctic ---, Longyearbyen, , --- Asia ---, Aden, Almaty, Amman, Anadyr, Aqtau, Aqtobe, Ashgabat, Baghdad, Bahrain, Baku, Bangkok, Beirut, Bishkek, Brunei, Choibalsan, Chongqing, Colombo, Damascus, Dhaka, Dili, Dubai, Dushanbe, Gaza, Harbin, Ho Chi Minh, Hong Kong, Hovd, Irkutsk, Jakarta, Jayapura, Jerusalem, Kabul, Kamchatka, Karachi, Kashgar, Kathmandu, Kolkata, Krasnoyarsk, Kuala Lumpur, Kuching, Kuwait, Macau, Magadan, Makassar, Manila, Muscat, Nicosia, Novokuznetsk, Novosibirsk, Omsk, Oral, Phnom Penh, Pontianak, Pyongyang, Qatar, Qyzylorda, Rangoon, Riyadh, Sakhalin, Samarkand, Seoul, Shanghai, Singapore, Taipei, Tashkent, Tbilisi, Tehran, Thimphu, Tokyo, Ulaanbaatar, Urumqi, Vientiane, Vladivostok, Yakutsk, Yekaterinburg, Yerevan, , --- Atlantic ---, Azores, Bermuda, Canary, Cape Verde, Faroe, Madeira, Reykjavik, South Georgia, St Helena, Stanley, , --- Australia ---, Adelaide, Brisbane, Broken Hill, Currie, Darwin, Eucla, Hobart, Lindeman, Lord Howe, Melbourne, Perth, Sydney, , --- Europe ---, Amsterdam, Andorra, Athens, Belgrade, Berlin, Bratislava, Brussels, Bucharest, Budapest, Chisinau, Copenhagen, Dublin, Gibraltar, Guernsey, Helsinki, Isle of Man, Istanbul, Jersey, Kaliningrad, Kiev, Lisbon, Ljubljana, London, Luxembourg, Madrid, Malta, Mariehamn, Minsk, Monaco, Moscow, Oslo, Paris, Podgorica, Prague, Riga, Rome, Samara, San Marino, Sarajevo, Simferopol, Skopje, Sofia, Stockholm, Tallinn, Tirane, Uzhgorod, Vaduz, Vatican, Vienna, Vilnius, Volgograd, Warsaw, Zagreb, Zaporozhye, Zurich, , --- Indian ---, Antananarivo, Chagos, Christmas, Cocos, Comoro, Kerguelen, Mahe, Maldives, Mauritius, Mayotte, Reunion, , --- Pacific ---, Apia, Auckland, Chatham, Easter, Efate, Enderbury, Fakaofo, Fiji, Funafuti, Galapagos, Gambier, Guadalcanal, Guam, Honolulu, Johnston, Kiritimati, Kosrae, Kwajalein, Majuro, Marquesas, Midway, Nauru, Niue, Norfolk, Noumea, Pago Pago, Palau, Pitcairn, Ponape, Port Moresby, Rarotonga, Saipan, Tahiti, Tarawa, Tongatapu, Truk, Wake, Wallis, , --- None of the above ---, UTC
+tzsetup-udeb	tzsetup/select_all	select	
+# for internal use; can be preseeded
+partman-auto	partman-auto/expert_recipe_file	string	
+# Keep default keyboard layout ()?
+d-i	console-setup/unsupported_layout	boolean	true
+# Failed to load installer component
+d-i	anna/install_failed	error	
+# Choose a country, territory or area:
+# Choices: Russian Federation, Ukraine, other
+d-i	localechooser/shortlist/ru	select	
+# Use software from the "multiverse" component?
+apt-mirror-setup	apt-setup/multiverse	boolean	true
+# Entering low memory mode
+d-i	lowmem/low	note	
+# Select a city in your time zone:
+# Choices: Lord Howe Island, Hobart, Melbourne, Sydney, Broken Hill, Brisbane, Lindeman, Adelaide, Darwin, Perth, Select from worldwide list
+tzsetup-udeb	tzsetup/country/AU	select	Australia/Sydney
+# Choose a country, territory or area:
+# Choices: Libya, Jordan, United Arab Emirates, Bahrain, Algeria, Syrian Arab Republic, Saudi Arabia, Sudan, Iraq, Kuwait, Morocco, India, Yemen, Tunisia, Oman, Qatar, Lebanon, Egypt, other
+d-i	localechooser/shortlist/ar	select	
+# for internal use; can be preseeded
+partman-auto	partman-auto/disk	string	
+# Select a city in your time zone:
+# Choices: Almaty, Qyzylorda, Aqtobe, Atyrau, Oral, Select from worldwide list
+tzsetup-udeb	tzsetup/country/KZ	select	
+# for internal use
+d-i	console-setup/layoutcode	string	us
+# Not enough RAID partitions specified
+partman-auto-raid	partman-auto-raid/notenoughparts	error	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/kernel/backports-modules	string	
+# Choose a country, territory or area:
+# Choices: Antigua and Barbuda, Australia, Botswana, Canada, Hong Kong, India, Ireland, New Zealand, Nigeria, Philippines, Singapore, South Africa, United Kingdom, United States, Zimbabwe, other
+d-i	localechooser/shortlist/en	select	
+# Remove existing logical volume data?
+partman-lvm	partman-lvm/device_remove_lvm	boolean	false
+# for internal use only
+d-i	anna/retriever	string	net-retriever
+# Mount point for this partition:
+partman-basicfilesystems	partman-basicfilesystems/mountpoint_manual	string	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/debootstrap_script	string	
+# The size entered is too large
+partman-partitioning	partman-partitioning/big_new_size	error	
+# Enable shadow passwords?
+user-setup-udeb	passwd/shadow	boolean	true
+# Failed to remove conflicting files
+partman-target	partman-target/clear_partitions_failed	error	
+# Point-to-point address:
+d-i	netcfg/get_pointopoint	string	
+# Choose a country, territory or area:
+# Choices: Albania, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Georgia, Germany, Gibraltar, Greece, Greenland, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia\, Republic of, Malta, Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Russian Federation, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom
+d-i	localechooser/countrylist/Europe	select	
+# Keep current partition layout and configure LVM?
+partman-lvm	partman-lvm/confirm_nochanges	boolean	false
+# HTTP proxy information (blank for none):
+d-i	mirror/http/proxy	string	
+# Use contrib software?
+apt-mirror-setup	apt-setup/contrib	boolean	false
+# Download language support?
+pkgsel	pkgsel/install-language-support	boolean	true
+# for internal use; can be preseeded
+d-i	debian-installer/framebuffer	boolean	true
+# Invalid input
+partman-auto-lvm	partman-auto-lvm/bad_guided_size	error	
+# No network interfaces detected
+d-i	netcfg/no_interfaces	error	
+# for internal use; can be preseeded
+clock-setup	clock-setup/utc-auto	boolean	false
+# Location for the new partition:
+# Choices: Beginning, End
+partman-partitioning	partman-partitioning/new_partition_place	select	
+# for internal use; can be preseeded
+d-i	preseed/include	string	
+# for internal use
+bootstrap-base	base-installer/kernel/linux/initramfs-tools/driver-policy	string	most
+# iSCSI targets on :
+# Choices: 
+partman-iscsi	partman-iscsi/login/targets	multiselect	
+# Ignore questions with a priority less than:
+# Choices: critical, high, medium, low
+d-i	debconf/priority	select	high
+# for internal use; can be preseeded
+finish-install	finish-install/keep-consoles	boolean	false
+# Continue without installing a kernel?
+bootstrap-base	base-installer/kernel/skip-install	boolean	false
+# Detecting your keyboard layout
+d-i	console-setup/detect	detect-keyboard	
+# No volume group found
+partman-lvm	partman-lvm/vgreduce_novg	error	
+# Invalid file system for this mount point
+partman-basicfilesystems	partman-basicfilesystems/posix_filesystem_required	error	
+# The encryption key for  is now being created.
+partman-crypto	partman-crypto/entropy	entropy	
+# Install the GRUB boot loader to the multipath device?
+grub-installer	grub-installer/multipath	boolean	true
+# Choose a country, territory or area:
+# Choices: Bouvet Island, Falkland Islands (Malvinas), Saint Helena, South Georgia and the South Sandwich Islands
+d-i	localechooser/countrylist/Atlantic_Ocean	select	
+# Continue the install without loading kernel modules?
+d-i	anna/no_kernel_modules	boolean	false
+# Home directory encryption failed
+user-setup-udeb	user-setup/encrypt-home-failed	error	
+# Install the GRUB boot loader to the Serial ATA RAID disk?
+grub-installer	grub-installer/sataraid	boolean	true
+# Volume group name overlaps with device name
+partman-lvm	partman-lvm/vgcreate_devnameused	error	
+# Percentage of the file system blocks reserved for the super-user:
+partman-basicfilesystems	partman-basicfilesystems/specify_reserved	string	
+# Ubuntu archive mirror hostname:
+d-i	mirror/http/hostname	string	10.24.4.84
+# for internal use; can be preseeded
+d-i	debian-installer/exit/poweroff	boolean	false
+# Volume group name:
+partman-lvm	partman-lvm/vgcreate_name	string	
+# Choose a country, territory or area:
+# Choices: Bangladesh, India, other
+d-i	localechooser/shortlist/bn	select	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/kernel/linux/extra-packages-2.6	string	
+# for internal use; can be preseeded
+d-i	preseed/include/checksum	string	
+# LILO installation failed
+lilo-installer	lilo-installer/failed	error	
+# Name of the volume group for the new system:
+partman-auto-lvm	partman-auto-lvm/new_vg_name_exists	string	
+# Debootstrap Error
+bootstrap-base	base-installer/no_codename	error	
+# Install GRUB 2 instead of GRUB Legacy?
+grub-installer	grub-installer/grub2_instead_of_grub_legacy	boolean	true
+# Invalid username
+user-setup-udeb	passwd/username-bad	error	
+# How do you want to manage upgrades on this system?
+# Choices: No automatic updates, Install security updates automatically, Manage system with Landscape
+pkgsel	pkgsel/update-policy	select	none
+# LILO installation target:
+# Choices: : software RAID array, Other choice (Advanced)
+lilo-installer	lilo-installer/bootdev_raid	select	
+# for internal use; can be preseeded
+partman-iscsi	partman-iscsi/login/all_targets	boolean	false
+# Load missing drivers from removable media?
+d-i	hw-detect/load_media	boolean	false
+# No physical volumes selected
+partman-lvm	partman-lvm/vgcreate_nosel	error	
+# Invalid WEP key
+d-i	netcfg/invalid_wep	error	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/excludes	string	
+# Continue without a network mirror?
+apt-mirror-setup	apt-setup/no_mirror	boolean	false
+# for internal use
+d-i	console-setup/codesetcode	string	Lat15
+# Kill switch enabled on 
+d-i	netcfg/kill_switch_enabled	note	
+# Failed to partition the selected disk
+partman-auto-lvm	partman-auto-lvm/unusable_recipe	error	
+# Start PC card services?
+d-i	hw-detect/start_pcmcia	boolean	true
+# Error while reducing volume group
+partman-lvm	partman-lvm/vgcreate_error	error	
+# No software RAID devices available
+partman-md	partman-md/delete_no_md	error	
+# Empty password
+user-setup-udeb	user-setup/password-empty	error	
+# Go back to the menu and correct this problem?
+partman-ext3	partman/boot_not_first_partition	boolean	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/couldntdl	error	
+# Select your time zone:
+# Choices: Central, Mountain, Pacific, Select from worldwide list
+tzsetup-udeb	tzsetup/country/MX	select	
+# LVM configuration failure
+partman-lvm	partman-lvm/commit_failed	error	
+# Full name for the new user:
+user-setup-udeb	passwd/user-fullname	string	zh
+# Error while setting up RAID
+partman-auto-raid	partman-auto-raid/error	error	
+# for internal use; can be preseeded
+d-i	debian-installer/add-kernel-opts	string	
+# DHCP hostname:
+d-i	netcfg/dhcp_hostname	string	
+# AltGr key replacement:
+# Choices: No AltGr key, Right Alt, Right Control, Right Logo key, Menu key, Left Alt, Left Logo key, Keypad Enter key, Both Logo keys, Both Alt keys
+d-i	console-setup/altgr	select	No AltGr key
+# The size entered is too small
+partman-partitioning	partman-partitioning/small_new_size	error	
+# for internal use; can be preseeded
+partman-auto	partman-auto/method	string	
+# Do you want to return to the partitioning menu?
+partman-basicfilesystems	partman-basicfilesystems/no_mount_point	boolean	
+# for internal use; cannot be preseeded
+d-i	debian-installer/charmap	string	UTF-8
+# Devices to remove from the volume group:
+# Choices: 
+partman-lvm	partman-lvm/vgreduce_parts	multiselect	
+# Virtual consoles in use:
+d-i	console-setup/ttys	string	/dev/tty[1-6]
+# Typical usage of this partition:
+# Choices: 
+partman-basicfilesystems	partman-basicfilesystems/specify_usage	select	
+# for internal use; can be preseeded
+partman-ext3	partman-ext3/lazy_itable_init	boolean	false
+# No root file system
+partman-target	partman-target/no_root	error	
+# Select a city in your time zone:
+# Choices: Noronha, Belem, Fortaleza, Recife, Araguaina, Maceio, Bahia, Sao Paulo, Campo Grande, Cuiaba, Porto Velho, Boa Vista, Manaus, Eirunepe, Rio Branco, Select from worldwide list
+tzsetup-udeb	tzsetup/country/BR	select	America/Sao_Paulo
+# Type for the new partition:
+# Choices: Primary, Logical
+partman-partitioning	partman-partitioning/new_partition_type	select	
+# Error
+d-i	netcfg/error	error	
+# Architecture not supported
+d-i	mirror/noarch	error	
+# This is an overview of your currently configured partitions and mount points. Select a partition to modify its settings (file system, mount point, etc.), a free space to create partitions, or a device to initialize its partition table.
+# Choices: 
+partman-base	partman/choose_partition	select	
+# Failed to partition the selected disk
+partman-auto	partman-auto/no_recipe	error	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/nogetrelsig	error	
+# Empty passphrase
+partman-crypto	partman-crypto/passphrase-empty	error	
+# Failed to delete the software RAID device
+partman-md	partman-md/deletefailed	error	
+# Choose a country, territory or area:
+# Choices: Brazil, Portugal, other
+d-i	localechooser/shortlist/pt	select	
+# Amount of volume group to use for guided partitioning:
+partman-auto-lvm	partman-auto-lvm/guided_size	string	8.3 GB
+# for internal use; can be preseeded
+d-i	preseed/early_command	string	
+# Character set to support:
+# Choices: . Arabic, # Armenian, # Cyrillic - KOI8-R and KOI8-U, # Cyrillic - non-Slavic languages, # Cyrillic - Slavic languages (also Bosnian and Serbian Latin), . Ethiopic, # Georgian, # Greek, # Hebrew, # Lao, # Latin1 and Latin5 - western Europe and Turkic languages, # Latin2 - central Europe and Romanian, # Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh, # Latin7 - Lithuanian; Latvian; Maori and Marshallese, . Latin - Vietnamese, # Thai, . Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic, . Combined - Latin; Slavic Cyrillic; Greek, . Combined - Latin; Slavic and non-Slavic Cyrillic
+d-i	console-setup/codeset	select	# Latin1 and Latin5 - western Europe and Turkic languages
+# Unsupported initrd generator
+bootstrap-base	base-installer/initramfs/unsupported	error	
+# WEP key for wireless device :
+d-i	netcfg/wireless_wep	string	
+# Select a location in your time zone:
+# Choices: Madrid, Ceuta, Canary Islands, Select from worldwide list
+tzsetup-udeb	tzsetup/country/ES	select	
+# Unable to configure GRUB
+grub-installer	grub-installer/multipath-error	error	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/includes	string	
+# for internal use only
+d-i	debian-installer/exit/always_halt	boolean	false
+# iSCSI initiator username for :
+partman-iscsi	partman-iscsi/login/username	string	
+# Method for toggling between national and Latin mode:
+# Choices: Caps Lock, Right Alt, Right Control, Right Shift, Right Logo key, Menu key, Alt+Shift, Control+Shift, Control+Alt, Alt+Caps Lock, Left Control+Left Shift, Left Alt, Left Control, Left Shift, Left Logo key, Scroll Lock key, No toggling
+d-i	console-setup/toggle	select	No toggling
+# Do you want to return to the partitioning menu?
+partman-xfs	partman-xfs/no_mount_point	boolean	
+# Partition in use
+partman-base	partman-base/partlocked	error	
+# Font for the console:
+# Choices: Fixed, Terminus, TerminusBold, TerminusBoldVGA, VGA
+d-i	console-setup/fontface	select	VGA
+# Select a location in your time zone:
+# Choices: Auckland, Chatham Islands, Select from worldwide list
+tzsetup-udeb	tzsetup/country/NZ	select	
+# Cannot access repository
+apt-setup-udeb	apt-setup/service-failed	error	
+# for internal use; can be preseeded
+d-i	netcfg/network-manager	boolean	true
+# Choose a continent or region:
+# Choices: Africa, Antarctica, Asia, Atlantic Ocean, Caribbean, Central America, Europe, Indian Ocean, North America, Oceania, South America
+d-i	localechooser/continentlist	select	
+# Write the changes to disks?
+partman-base	partman/confirm	boolean	false
+# Go back to the menu and correct errors?
+partman-xfs	partman-xfs/check_failed	boolean	
+# Is this time zone correct?
+tzsetup-udeb	tzsetup/selected	boolean	true
+# Are you sure you want to use a random key?
+partman-crypto	partman-crypto/use_random_for_nonswap	boolean	false
+# Device for boot loader installation:
+grub-installer	grub-installer/bootdev	string	
+# Use backported software?
+apt-mirror-setup	apt-setup/backports	boolean	false
+# IP address:
+d-i	netcfg/get_ipaddress	string	
+# Really erase the data on ?
+partman-crypto	partman-crypto/warn_erase	boolean	false
+# Invalid logical volume or volume group name
+partman-lvm	partman-lvm/badnamegiven	error	
+# Encryption for this partition:
+# Choices: 
+partman-crypto	partman-crypto/cipher	select	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/kernel/headers	boolean	true
+# Malformed IP address
+d-i	netcfg/bad_ipaddress	error	
+# How should the debug logs be saved or transferred?
+# Choices: floppy, web, mounted file system
+d-i	save-logs/menu	select	
+# Continue without a default route?
+d-i	netcfg/no_default_route	boolean	
+# Unable to install GRUB in 
+grub-installer	grub-installer/grub-install-failed	error	
+# GRUB installation failed
+grub-installer	grub-installer/apt-install-failed	error	
+# Volume group to delete:
+# Choices: 
+partman-lvm	partman-lvm/vgdelete_names	select	
+# Flags for the new partition:
+# Choices: 
+partman-partitioning	partman-partitioning/set_flags	multiselect	
+# Font size:
+# Choices: 14, 16, 8
+d-i	console-setup/fontsize-text	select	16
+# Compose key:
+# Choices: No compose key, Right Alt, Right Control, Right Logo key, Menu key, Left Logo key, Caps Lock
+d-i	console-setup/compose	select	No compose key
+# Continue with the installation?
+partman-base	partman/confirm_nochanges	boolean	false
+# Logical Volume Management
+partman-lvm	partman-lvm/help	note	
+# for internal use; can be preseeded
+tzsetup-udeb	tzsetup/geoip_server	string	http://geoip.ubuntu.com/lookup
+# LILO configured to use a serial console
+lilo-installer	lilo-installer/serial-console	note	
+# Logical volume name:
+partman-lvm	partman-lvm/lvcreate_name	string	
+# for internal use; can be preseeded
+pkgsel	pkgsel/updatedb	boolean	true
+# Initialisation of encrypted volume failed
+partman-crypto	partman-crypto/init_failed	error	
+# Write the changes to the storage devices and configure RAID?
+partman-md	partman-md/confirm	boolean	false
+# for internal use; can be preseeded
+d-i	rescue/enable	boolean	false
+# No logical volume name entered
+partman-lvm	partman-lvm/lvcreate_nonamegiven	error	
+# Insert formatted floppy in drive
+d-i	save-logs/insert_floppy	note	
+# Devices to encrypt:
+# Choices: 
+partman-crypto	partman-crypto/create/partitions	multiselect	
+# Use unrecommended JFS /boot file system?
+partman-jfs	partman-jfs/jfs_boot	boolean	false
+# Translations temporarily not available
+d-i	localechooser/translation/none-yet	note	
+# Proceed with installation to unclean target?
+base-installer	base-installer/use_unclean_target	boolean	true
+# Use weak password?
+user-setup-udeb	user-setup/password-weak	boolean	
+# Wait another 30 seconds for hwclock to set the clock?
+clock-setup	clock-setup/hwclock-wait	boolean	false
+# for internal use only
+d-i	debconf/translations-dropped	boolean	true
+# Setting firmware variables for automatic boot
+nobootloader	nobootloader/confirmation_powerpc_pasemi	note	
+# iSCSI target portal address:
+partman-iscsi	partman-iscsi/login/address	string	
+# Choose a country, territory or area:
+# Choices: Spain, France, other
+d-i	localechooser/shortlist/eu	select	
+# Go back to the menu?
+partman-basicmethods	partman-basicmethods/method_only	boolean	
+# for internal use; can be preseeded
+pkgsel	pkgsel/ignore-incomplete-language-support	boolean	false
+# Separate file system not allowed here
+partman-target	partman-target/must_be_on_root	error	
+# Failed to create a file system
+partman-xfs	partman-xfs/create_failed	error	
+# No physical volumes selected
+partman-lvm	partman-lvm/vgextend_nosel	error	
+# for internal use; can be preseeded
+partman-base	partman/filter_mounted	boolean	true
+# Error while initializing physical volume
+partman-lvm	partman-lvm/pvcreate_error	error	
+# Choose a country, territory or area:
+# Choices: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, French Guiana, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela
+d-i	localechooser/countrylist/South_America	select	
+# Keep current partition layout and configure encrypted volumes?
+partman-crypto	partman-crypto/confirm_nochanges	boolean	false
+# Choose a country, territory or area:
+# Choices: Serbia, Montenegro, other
+d-i	localechooser/shortlist/sr	select	
+# Invalid size
+partman-partitioning	partman-partitioning/bad_new_partition_size	error	
+# Write previous changes to disk and continue?
+partman-partitioning	partman-partitioning/confirm_resize	boolean	
+# Partition settings:
+# Choices: 
+partman-base	partman/active_partition	select	
+# Domain name:
+d-i	netcfg/get_domain	string	gdcloud.com
+# Select a location in your time zone:
+# Choices: McMurdo, south pole, Rothera, Palmer, Mawson, Davis, Casey, Vostok, Dumont-d'Urville, Syowa, Select from worldwide list
+tzsetup-udeb	tzsetup/country/AQ	select	
+# for internal use; can be preseeded
+d-i	hw-detect/load-ide	boolean	false
+# for internal use; can be preseeded
+d-i	preseed/interactive	boolean	false
+# Installation step failed
+d-i	debian-installer/main-menu/item-failure	error	
+# Error while running ''
+d-i	hw-detect/modprobe_error	error	
+# Continue with partitioning?
+partman-partitioning	partman-partitioning/unsupported_label	boolean	false
+# for internal use; can be preseeded
+# Choices: cylinder, minimal, optimal
+partman-base	partman/alignment	select	optimal
+# Install the GRUB boot loader to the master boot record?
+grub-installer	grub-installer/with_other_os	boolean	true
+# No volume group found
+partman-lvm	partman-lvm/lvcreate_nofreevg	error	
+# Do you want to boot your system if your RAID becomes degraded?
+mdadm-udeb	mdadm/boot_degraded	boolean	false
+# Reserved username
+user-setup-udeb	passwd/username-reserved	error	
+# for internal use only
+partman-auto-raid	partman-auto-raid/raidnum	string	
+# No devices selected
+partman-crypto	partman-crypto/create/nosel	error	
+# 
+partman-base	partman/exception_handler_note	note	
+# Invalid hostname
+d-i	netcfg/invalid_hostname	error	
+# Choose a country, territory or area:
+# Choices: Pakistan, India, other
+d-i	localechooser/shortlist/pa	select	
+# for internal use; can be preseeded
+partman-base	partman/early_command	string	
+# Select a city in your time zone:
+# Choices: Ulaanbaatar, Hovd, Choibalsan, Select from worldwide list
+tzsetup-udeb	tzsetup/country/MN	select	
+# Use proposed updates?
+apt-mirror-setup	apt-setup/proposed	boolean	false
+# for internal use; can be preseeded
+partman-base	partman/default_filesystem	string	ext4
+# Unmount partitions that are in use?
+partman-base	partman/unmount_active	boolean	
+# Create a normal user account now?
+user-setup-udeb	passwd/make-user	boolean	true
+# Name of the volume group for the new system:
+partman-auto-lvm	partman-auto-lvm/new_vg_name	string	localhost
+# Choose a language:
+# Choices: C${!TAB}-${!TAB}No localization, English${!TAB}-${!TAB}English
+d-i	localechooser/languagelist	select	en
+# Not enough RAID partitions available
+partman-md	partman-md/notenoughparts	error	
+# Installer components to load:
+# Choices: 
+d-i	anna/choose_modules_lowmem	multiselect	
+# Debootstrap warning
+bootstrap-base	base-installer/debootstrap/fallback-warning	error	
+# Unsafe swap space detected
+partman-crypto	partman-crypto/unsafe_swap	error	
+# for internal use only
+d-i	debian-installer/language	string	en
+# Select a city in your time zone:
+# Choices: Kinshasa, Lubumbashi, Select from worldwide list
+tzsetup-udeb	tzsetup/country/CD	select	
+# No DHCP client found
+d-i	netcfg/no_dhcp_client	error	
+# Select disk(s) to partition:
+# Choices: 
+partman-auto	partman-auto/select_disks	multiselect	
+# Select a location in your time zone:
+# Choices: Tahiti (Society Islands), Marquesas Islands, Gambier Islands, Select from worldwide list
+tzsetup-udeb	tzsetup/country/PF	select	
+# Go back to the menu and correct errors?
+partman-basicfilesystems	partman-basicfilesystems/swap_check_failed	boolean	
+# Software RAID device type:
+# Choices: RAID0, RAID1, RAID5, RAID6, RAID10
+partman-md	partman-md/createmain	select	
+# Label for the file system in this partition:
+partman-basicfilesystems	partman-basicfilesystems/choose_label	string	
+# Go back to the menu and correct errors?
+partman-reiserfs	partman-reiserfs/check_failed	boolean	
+# Password input error
+grub-installer	grub-installer/password-mismatch	error	
+# Ubuntu archive mirror:
+# Choices: 
+d-i	mirror/http/mirror	select	CC.archive.ubuntu.com
+# Choose a country, territory or area:
+# Choices: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, Bermuda, Cayman Islands, Cuba, Dominica, Dominican Republic, Grenada, Guadeloupe, Haiti, Jamaica, Martinique, Montserrat, Netherlands Antilles, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Martin (French part), Saint Vincent and the Grenadines, Trinidad and Tobago, Turks and Caicos Islands, Virgin Islands\, British, Virgin Islands\, U.S.
+d-i	localechooser/countrylist/Caribbean	select	
+# Language selection no longer possible
+d-i	localechooser/translation/no-select	note	
+# Detect keyboard layout?
+d-i	console-setup/ask_detect	boolean	false
+# Do you want to return to the partitioning menu?
+partman-reiserfs	partman-reiserfs/no_mount_point	boolean	
+# Downloading a file failed:
+# Choices: Retry, Change mirror, Cancel
+d-i	retriever/net/error	select	Retry
+# Choose a country, territory or area:
+# Choices: Afghanistan, Bahrain, Bangladesh, Bhutan, Brunei Darussalam, Cambodia, China, Hong Kong, India, Indonesia, Iran\, Islamic Republic of, Iraq, Israel, Japan, Jordan, Kazakhstan, Korea\, Democratic People's Republic of, Korea\, Republic of, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Lebanon, Macao, Malaysia, Mongolia, Myanmar, Nepal, Oman, Pakistan, Palestinian Territory\, Occupied, Philippines, Qatar, Saudi Arabia, Singapore, Sri Lanka, Syrian Arab Republic, Taiwan, Tajikistan, Thailand, Timor-Leste, Turkey, Turkmenistan, United Arab Emirates, Uzbekistan, Viet Nam, Yemen
+d-i	localechooser/countrylist/Asia	select	
+# Write the changes to disk and configure encrypted volumes?
+d-i	partman-crypto/confirm_nooverwrite	boolean	false
+# Select your time zone:
+# Choices: Tarawa (Gilbert Islands), Enderbury (Phoenix Islands), Kiritimati (Line Islands), Select from worldwide list
+tzsetup-udeb	tzsetup/country/KI	select	
+# Ubuntu archive mirror directory:
+d-i	mirror/ftp/directory	string	/ubuntu/
+# Set the clock using NTP?
+clock-setup	clock-setup/ntp	boolean	true
+# Do you want to return to the partitioning menu?
+partman-jfs	partman-jfs/no_mount_point	boolean	
+# for internal use; can be preseeded
+d-i	debian-installer/country	string	US
+# for internal use only
+bootstrap-base	base-installer/kernel/linux/link_in_boot	boolean	false
+# No file system mounted on /target
+base-installer	base-installer/no_target_mounted	error	
+# What to do with this device:
+# Choices: 
+partman-base	partman/storage_device	select	
+# for internal use; can be preseeded
+pkgsel	pkgsel/include/install-recommends	boolean	false
+# Base system installation error
+bootstrap-base	base-installer/debootstrap/error-abnormal	error	
+# for internal use only
+user-setup-udeb	passwd/auto-login-backup	string	
+# Partitioning method:
+# Choices: Guided - use entire disk, Guided - use entire disk and set up LVM, Guided - use entire disk and set up encrypted LVM, Manual
+partman-auto	partman-auto/init_automatically_partition	select	60some_device_lvm__________lvm
+# Failed to create a swap space
+partman-basicfilesystems	partman-basicfilesystems/create_swap_failed	error	
+# Choose a country, territory or area:
+# Choices: Belgium, Germany, Liechtenstein, Luxembourg, Austria, Switzerland, other
+d-i	localechooser/shortlist/de	select	
+# Write the changes to disks and configure LVM?
+partman-lvm	partman-lvm/confirm	boolean	false
+# Software RAID not available
+partman-md	partman-md/nomd	error	
+# Failed to create a file system
+partman-jfs	partman-jfs/create_failed	error	
+# for internal use; can be preseeded
+d-i	anna/standard_modules	boolean	true
+# Really delete the volume group?
+partman-lvm	partman-lvm/vgdelete_confirm	boolean	true
+# Failed to process the preconfiguration file
+d-i	preseed/load_error	error	
+# Method for temporarily toggling between national and Latin input:
+# Choices: No temporary switch, Both Logo keys, Right Alt, Right Logo key, Left Alt, Left Logo key
+d-i	console-setup/switch	select	No temporary switch
+# for internal use; can be preseeded
+grub-installer	grub-installer/make_active	boolean	true
+# No volume group found
+partman-lvm	partman-lvm/vgextend_novg	error	
+# Keep unsupported settings in configuration file?
+d-i	console-setup/unsupported_config_layout	boolean	true
+# Use software from the "partner" repository?
+apt-mirror-setup	apt-setup/partner	boolean	false
+# for internal use; can be preseeded
+d-i	netcfg/disable_dhcp	boolean	false
+# codename for the selected suite (for internal use)
+d-i	mirror/codename	string	lucid
+# Continue installation without /boot partition?
+partman-auto-lvm	partman-auto-lvm/no_boot	boolean	
+# Write a new empty partition table?
+partman-partitioning	partman-partitioning/confirm_write_new_label	boolean	false
+# Do you want to return to the partitioner?
+partman-target	ubiquity/partman-system-unformatted	boolean	
+# Use non-free software?
+apt-mirror-setup	apt-setup/non-free	boolean	false
+# Write the changes to disk and configure encrypted volumes?
+partman-crypto	partman-crypto/confirm	boolean	false
+# for internal use; can be preseeded
+# Choices: traditional, label, uuid
+partman-target	partman/mount_style	select	uuid
+# Wireless ESSID for :
+d-i	netcfg/wireless_essid_again	string	
+# Select a location in your time zone:
+# Choices: Godthab, Danmarkshavn, Scoresbysund, Thule, Select from worldwide list
+tzsetup-udeb	tzsetup/country/GL	select	
+# Keyfile creation failure
+partman-crypto	partman-crypto/keyfile-problem	error	
+# Patterns for language packs to install
+pkgsel	pkgsel/language-pack-patterns	string	language-pack-gnome-$LL
+# Software RAID configuration actions
+# Choices: Create MD device, Delete MD device, Finish
+partman-md	partman-md/mainmenu	select	
+# Select your time zone:
+# Choices: Moscow-01 - Kaliningrad, Moscow+00 - west Russia, Moscow+01 - Samara, Moscow+02 - Urals, Moscow+03 - west Siberia, Moscow+03 - Novosibirsk, Moscow+04 - Yenisei River, Moscow+05 - Lake Baikal, Moscow+06 - Lena River, Moscow+07 - Amur River, Moscow+07 - Sakhalin Island, Moscow+08 - Magadan, Moscow+09 - Kamchatka, Moscow+10 - Bering Sea, Select from worldwide list
+tzsetup-udeb	tzsetup/country/RU	select	Europe/Moscow
+# Current LVM configuration:
+partman-lvm	partman-lvm/displayall	note	
+# Cannot install kernel
+bootstrap-base	base-installer/kernel/no-kernels-found	error	
+# for internal use; can be preseeded
+d-i	debian-installer/allow_unauthenticated	boolean	false
+# Downloading a file failed:
+# Choices: Retry, Change mirror, Ignore
+apt-mirror-setup	apt-setup/mirror/error	select	Retry
+# for internal use only
+bootstrap-base	base-installer/kernel/linux/initrd-2.6	boolean	true
+#  is too small
+partman-auto-lvm	partman-auto-lvm/small_guided_size	error	
+# Continue the installation in the selected language?
+d-i	localechooser/translation/warn-severe	boolean	false
+# for internal use; can be preseeded
+d-i	debian-installer/theme	string	
+# Choose a country, territory or area:
+# Choices: American Samoa, Australia, Cook Islands, Fiji, French Polynesia, Guam, Kiribati, Marshall Islands, Micronesia\, Federated States of, Nauru, New Caledonia, New Zealand, Niue, Norfolk Island, Northern Mariana Islands, Palau, Papua New Guinea, Pitcairn, Samoa, Solomon Islands, Tokelau, Tonga, Tuvalu, United States Minor Outlying Islands, Vanuatu, Wallis and Futuna
+d-i	localechooser/countrylist/Oceania	select	
+# No boot loader installed
+nobootloader	nobootloader/confirmation_common	note	
+# Select your time zone:
+# Choices: Santiago, Easter Island, Select from worldwide list
+tzsetup-udeb	tzsetup/country/CL	select	
+# Are you sure you want to exit now?
+d-i	di-utils-reboot/really_reboot	boolean	false
+# Choose a country, territory or area:
+# Choices: Brazil, Portugal, other
+d-i	localechooser/shortlist/pt_BR	select	
+# Tool to use to generate boot initrd:
+# Choices: 
+bootstrap-base	base-installer/initramfs/generator	select	
+# for internal use only
+d-i	debconf/frontend	string	newt
+# Error while deleting the logical volume
+partman-lvm	partman-lvm/lvdelete_error	error	
+# Choose software to install:
+# Choices: Basic Ubuntu server, DNS server, LAMP server, Mail server, OpenSSH server, PostgreSQL database, Print server, Samba file server, Tomcat Java server, Virtual Machine host, Manual package selection
+d-i	tasksel/first	multiselect	OpenSSH server
+# Use unrecommended JFS root file system?
+partman-jfs	partman-jfs/jfs_root	boolean	false
+# Invalid partition name
+lilo-installer	lilo-installer/manual_bootdev_error	error	
+# Invalid ESSID
+d-i	netcfg/invalid_essid	error	
+# for internal use; can be preseeded
+d-i	debian-installer/exit/halt	boolean	false
+# Partition table type:
+# Choices: aix, amiga, bsd, dvh, gpt, mac, msdos, pc98, sun, loop
+partman-partitioning	partman-partitioning/choose_label	select	
+# No usable physical volumes found
+partman-lvm	partman-lvm/nopartitions	error	
+# Encoding to use on the console:
+# Choices: ARMSCII-8, CP1251, CP1255, CP1256, GEORGIAN-ACADEMY, GEORGIAN-PS, IBM1133, ISIRI-3342, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14, ISO-8859-15, ISO-8859-16, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, KOI8-R, KOI8-U, TIS-620, UTF-8, VISCII
+d-i	console-setup/charmap	select	UTF-8
+# Would you like to make this partition active?
+lilo-installer	lilo-installer/activate-part	boolean	true
+# Bad archive mirror
+d-i	mirror/bad	error	
+# Choose a country, territory or area:
+# Choices: Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama
+d-i	localechooser/countrylist/Central_America	select	
+# Select your time zone:
+# Choices: --- Africa ---, Abidjan, Accra, Addis Ababa, Algiers, Asmara, Bamako, Bangui, Banjul, Bissau, Blantyre, Brazzaville, Bujumbura, Cairo, Casablanca, Ceuta, Conakry, Dakar, Dar es Salaam, Djibouti, Douala, El Aaiun, Freetown, Gaborone, Harare, Johannesburg, Kampala, Khartoum, Kigali, Kinshasa, Lagos, Libreville, Lome, Luanda, Lubumbashi, Lusaka, Malabo, Maputo, Maseru, Mbabane, Mogadishu, Monrovia, Nairobi, Ndjamena, Niamey, Nouakchott, Ouagadougou, Porto-Novo, Sao Tome, Tripoli, Tunis, Windhoek, , --- America ---, Adak, Anchorage, Anguilla, Antigua, Araguaina, Argentina/Buenos Aires, Argentina/Catamarca, Argentina/Cordoba, Argentina/Jujuy, Argentina/La Rioja, Argentina/Mendoza, Argentina/Rio Gallegos, Argentina/Salta, Argentina/San Juan, Argentina/San Luis, Argentina/Tucuman, Argentina/Ushuaia, Aruba, Asuncion, Atikokan, Bahia, Barbados, Belem, Belize, Blanc-Sablon, Boa Vista, Bogota, Boise, Cambridge Bay, Campo Grande, Cancun, Caracas, Cayenne, Cayman, Chicago, Chihuahua, Costa Rica, Cuiaba, Curacao, Danmarkshavn, Dawson, Dawson Creek, Denver, Detroit, Dominica, Edmonton, Eirunepe, El Salvador, Fortaleza, Glace Bay, Godthab, Goose Bay, Grand Turk, Grenada, Guadeloupe, Guatemala, Guayaquil, Guyana, Halifax, Havana, Hermosillo, Indiana/Indianapolis, Indiana/Knox, Indiana/Marengo, Indiana/Petersburg, Indiana/Tell City, Indiana/Vevay, Indiana/Vincennes, Indiana/Winamac, Inuvik, Iqaluit, Jamaica, Juneau, Kentucky/Louisville, Kentucky/Monticello, La Paz, Lima, Los Angeles, Maceio, Managua, Manaus, Marigot, Martinique, Matamoros, Mazatlan, Menominee, Merida, Mexico City, Miquelon, Moncton, Monterrey, Montevideo, Montreal, Montserrat, Nassau, New York, Nipigon, Nome, Noronha, North Dakota/Center, North Dakota/New Salem, Ojinaga, Panama, Pangnirtung, Paramaribo, Phoenix, Port-au-Prince, Port of Spain, Porto Velho, Puerto Rico, Rainy River, Rankin Inlet, Recife, Regina, Resolute, Rio Branco, Santa Isabel, Santarem, Santiago, Santo Domingo, Sao Paulo, Scoresbysund, Shiprock, St Barthelemy, St Johns, St Kitts, St Lucia, St Thomas, St Vincent, Swift Current, Tegucigalpa, Thule, Thunder Bay, Tijuana, Toronto, Tortola, Vancouver, Whitehorse, Winnipeg, Yakutat, Yellowknife, , --- Antarctica ---, Casey, Davis, DumontDUrville, Macquarie, Mawson, McMurdo, Palmer, Rothera, South Pole, Syowa, Vostok, , --- Arctic ---, Longyearbyen, , --- Asia ---, Aden, Almaty, Amman, Anadyr, Aqtau, Aqtobe, Ashgabat, Baghdad, Bahrain, Baku, Bangkok, Beirut, Bishkek, Brunei, Choibalsan, Chongqing, Colombo, Damascus, Dhaka, Dili, Dubai, Dushanbe, Gaza, Harbin, Ho Chi Minh, Hong Kong, Hovd, Irkutsk, Jakarta, Jayapura, Jerusalem, Kabul, Kamchatka, Karachi, Kashgar, Kathmandu, Kolkata, Krasnoyarsk, Kuala Lumpur, Kuching, Kuwait, Macau, Magadan, Makassar, Manila, Muscat, Nicosia, Novokuznetsk, Novosibirsk, Omsk, Oral, Phnom Penh, Pontianak, Pyongyang, Qatar, Qyzylorda, Rangoon, Riyadh, Sakhalin, Samarkand, Seoul, Shanghai, Singapore, Taipei, Tashkent, Tbilisi, Tehran, Thimphu, Tokyo, Ulaanbaatar, Urumqi, Vientiane, Vladivostok, Yakutsk, Yekaterinburg, Yerevan, , --- Atlantic ---, Azores, Bermuda, Canary, Cape Verde, Faroe, Madeira, Reykjavik, South Georgia, St Helena, Stanley, , --- Australia ---, Adelaide, Brisbane, Broken Hill, Currie, Darwin, Eucla, Hobart, Lindeman, Lord Howe, Melbourne, Perth, Sydney, , --- Europe ---, Amsterdam, Andorra, Athens, Belgrade, Berlin, Bratislava, Brussels, Bucharest, Budapest, Chisinau, Copenhagen, Dublin, Gibraltar, Guernsey, Helsinki, Isle of Man, Istanbul, Jersey, Kaliningrad, Kiev, Lisbon, Ljubljana, London, Luxembourg, Madrid, Malta, Mariehamn, Minsk, Monaco, Moscow, Oslo, Paris, Podgorica, Prague, Riga, Rome, Samara, San Marino, Sarajevo, Simferopol, Skopje, Sofia, Stockholm, Tallinn, Tirane, Uzhgorod, Vaduz, Vatican, Vienna, Vilnius, Volgograd, Warsaw, Zagreb, Zaporozhye, Zurich, , --- Indian ---, Antananarivo, Chagos, Christmas, Cocos, Comoro, Kerguelen, Mahe, Maldives, Mauritius, Mayotte, Reunion, , --- Pacific ---, Apia, Auckland, Chatham, Easter, Efate, Enderbury, Fakaofo, Fiji, Funafuti, Galapagos, Gambier, Guadalcanal, Guam, Honolulu, Johnston, Kiritimati, Kosrae, Kwajalein, Majuro, Marquesas, Midway, Nauru, Niue, Norfolk, Noumea, Pago Pago, Palau, Pitcairn, Ponape, Port Moresby, Rarotonga, Saipan, Tahiti, Tarawa, Tongatapu, Truk, Wake, Wallis, , --- None of the above ---, UTC
+d-i	time/zone	select	Asia/Chongqing
+tzsetup-udeb	time/zone	select	Asia/Chongqing
+# Failed to create a file system
+partman-basicfilesystems	partman-basicfilesystems/create_failed	error	
+# always use this kernel image (for preseeding)
+bootstrap-base	base-installer/kernel/override-image	string	
+# LILO installation target:
+# Choices: : Master Boot Record, : new Ubuntu partition, Other choice (Advanced)
+lilo-installer	lilo-installer/bootdev	select	
+# Use weak passphrase?
+partman-crypto	partman-crypto/weak_passphrase	boolean	false
+# for internal use
+d-i	console-setup/optionscode	string	
+# Use a network mirror?
+apt-mirror-setup	apt-setup/use_mirror	boolean	
+# Protocol for file downloads:
+# Choices: http, ftp
+d-i	mirror/protocol	select	http
+# Go back to the menu and correct errors?
+partman-jfs	partman-jfs/check_failed	boolean	
+# Source partition:
+# Choices: 
+partman-partitioning	partman-partitioning/source_partition	select	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/nogetrel	error	
+# for internal use only
+user-setup-udeb	user-setup/allow-password-weak	boolean	false
+# Ethernet card not found
+d-i	ethdetect/cannot_find	error	
+# Do you want to return to the partitioning menu?
+partman-ext3	partman-ext3/no_mount_point	boolean	
+# for internal use; can be preseeded
+d-i	preseed/url/checksum	string	
+# Volume group name already in use
+partman-lvm	partman-lvm/vgcreate_nameused	error	
+# Mount point for this partition:
+# Choices: / - the root file system, /boot - static files of the boot loader, /home - user home directories, /tmp - temporary files, /usr - static data, /var - variable data, /srv - data for services provided by this system, /opt - add-on application software packages, /usr/local - local hierarchy, Enter manually, Do not mount it
+partman-basicfilesystems	partman-basicfilesystems/mountpoint	select	
+# Keep unsupported options ()?
+d-i	console-setup/unsupported_config_options	boolean	true
+# Select a location in your time zone:
+# Choices: Yap, Truk, Ponape, Kosrae, Select from worldwide list
+tzsetup-udeb	tzsetup/country/FM	select	
+# Spare devices for the RAID array:
+# Choices: 
+partman-md	partman-md/raidsparedevs	multiselect	
+# Key size for this partition:
+# Choices: 
+partman-crypto	partman-crypto/keysize	select	
+# No partitionable media
+disk-detect	disk-detect/cannot_find	error	
+# Installer components to load:
+# Choices: cdrom-checker: Verify the cd contents, cdrom-detect: Detect CDROM devices and mount the CD, eject-udeb: ejects CDs from d-i menu, eucalyptus-udeb: Elastic Utility Computing Architecture - installer integration, file-preseed: load debconf preseed file, iso-scan: Scan hard drives for an installer ISO image, load-cdrom: Load installer components from CD, load-iso: Load installer components from an installer ISO, load-media: Load installer components from removable media, lowmem: free memory for lowmem install, ltsp-client-builder: Build an LTSP environment in the installer target, migration-assistant: Import documents and settings from existing operating systems, mouse-modules-2.6.32-21-generic-di: Mouse support, network-console: Continue installation remotely using SSH, oem-config-udeb: Prepare for OEM configuration, openssh-client-udeb: secure shell client for the Debian installer, parted-udeb: Manually partition a hard drive (parted), rescue-mode: mount requested partition and start a rescue shell, squashfs-modules-2.6.32-21-generic-di: squashfs modules
+d-i	anna/choose_modules	multiselect	
+# Origin of the keyboard:
+# Choices: Afghanistan, Albania, Andorra, Arabic, Armenia, Azerbaijan, Bangladesh, Belarus, Belgium, Bhutan, Bosnia and Herzegovina, Braille, Brazil, Bulgaria, Cambodia, Canada, China, Congo\, Democratic Republic of the, Croatia, Czechia, Denmark, Esperanto, Estonia, Ethiopia, Faroe Islands, Finland, France, Georgia, Germany, Ghana, Greece, Guinea, Hungary, Iceland, India, Iran, Iraq, Ireland, Israel, Italy, Japan, Japan (PC-98xx Series), Kazakhstan, Korea\, Republic of, Kyrgyzstan, Laos, Latin American, Latvia, Lithuania, Macedonia, Maldives, Mali, Malta, Maori, Mongolia, Montenegro, Morocco, Myanmar, Nepal, Netherlands, Nigeria, Norway, Pakistan, Poland, Portugal, Romania, Russia, Senegal, Serbia, Slovakia, Slovenia, South Africa, Spain, Sri Lanka, Sweden, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Turkey, Turkmenistan, USA, Ukraine, United Kingdom, Uzbekistan, Vietnam
+d-i	console-setup/layout	select	USA
+# Do you want to return to the partitioning menu?
+partman-basicfilesystems	partman-basicfilesystems/no_swap	boolean	true
+# The partition starts from  and ends at .
+partman-base	partman/show_partition_chs	note	
+# Software RAID device to be deleted:
+# Choices: 
+partman-md	partman-md/deletemenu	select	
+# Are you sure you want a bootable logical partition?
+partman-partitioning	partman-partitioning/bootable_logical	boolean	false
+# Mount point for this partition:
+# Choices: /dos, /windows, Enter manually, Do not mount it
+partman-basicfilesystems	partman-basicfilesystems/fat_mountpoint	select	
+# Error while extending volume group
+partman-lvm	partman-lvm/vgextend_error	error	
+# Keyboard layout detection complete
+d-i	console-setup/detected	note	
+# Failed to create enough space for installation
+partman-auto	partman-auto/resize_insufficient_space	error	
+# Volume group name already in use
+partman-auto-lvm	partman-auto-lvm/vg_exists	error	
+# Help on partitioning
+partman-target	partman-target/help	note	
+# country code or "manual" (for internal use)
+d-i	mirror/country	string	manual
+# No volume group name entered
+partman-lvm	partman-lvm/vgcreate_nonamegiven	error	
+# Required programs missing
+partman-crypto	partman-crypto/tools_missing	note	
+# Logical volume size:
+partman-lvm	partman-lvm/lvcreate_size	string	
+# Debootstrap Error
+bootstrap-base	base-installer/debootstrap/error/missingrelentry	error	
+# LILO installation target:
+lilo-installer	lilo-installer/manual_bootdev	string	
+# Devices to add to the volume group:
+# Choices: 
+partman-lvm	partman-lvm/vgextend_parts	multiselect	
+# for internal use; can be preseeded
+lilo-installer	lilo-installer/skip	boolean	false
+# Loop-mounted file systems already present
+partman-auto-loop	partman-auto-loop/unclean_host	error	
+# Select your time zone:
+# Choices: Newfoundland, Atlantic, Eastern, Central, East Saskatchewan, Saskatchewan, Mountain, Pacific, Yukon, Select from worldwide list
+tzsetup-udeb	tzsetup/country/CA	select	Canada/Eastern
+# Terminal plugin not available
+d-i	debian-installer/terminal-plugin-unavailable	error	
+# Password input error
+user-setup-udeb	user-setup/password-mismatch	error	
+# Choose other locales to be supported:
+# Choices: #, #, aa_DJ.UTF-8, aa_DJ, aa_ER, aa_ER@saaho, aa_ET, af_ZA.UTF-8, af_ZA, am_ET, an_ES.UTF-8, an_ES, ar_AE.UTF-8, ar_AE, ar_BH.UTF-8, ar_BH, ar_DZ.UTF-8, ar_DZ, ar_EG.UTF-8, ar_EG, ar_IN, ar_IQ.UTF-8, ar_IQ, ar_JO.UTF-8, ar_JO, ar_KW.UTF-8, ar_KW, ar_LB.UTF-8, ar_LB, ar_LY.UTF-8, ar_LY, ar_MA.UTF-8, ar_MA, ar_OM.UTF-8, ar_OM, ar_QA.UTF-8, ar_QA, ar_SA.UTF-8, ar_SA, ar_SD.UTF-8, ar_SD, ar_SY.UTF-8, ar_SY, ar_TN.UTF-8, ar_TN, ar_YE.UTF-8, ar_YE, az_AZ.UTF-8, as_IN.UTF-8, ast_ES.UTF-8, ast_ES, be_BY.UTF-8, be_BY, be_BY@latin, ber_DZ, ber_MA, bg_BG.UTF-8, bg_BG, bn_BD, bn_IN, bo_CN, bo_IN, br_FR.UTF-8, br_FR, br_FR@euro, bs_BA.UTF-8, bs_BA, byn_ER, ca_AD.UTF-8, ca_AD, ca_ES.UTF-8, ca_ES, ca_ES@euro, ca_ES.UTF-8@valencia, ca_ES@valencia, ca_FR.UTF-8, ca_FR, ca_IT.UTF-8, ca_IT, crh_UA, cs_CZ.UTF-8, cs_CZ, csb_PL, cy_GB.UTF-8, cy_GB, da_DK.UTF-8, da_DK, de_AT.UTF-8, de_AT, de_AT@euro, de_BE.UTF-8, de_BE, de_BE@euro, de_CH.UTF-8, de_CH, de_DE.UTF-8, de_DE, de_DE@euro, de_LI.UTF-8, de_LU.UTF-8, de_LU, de_LU@euro, dv_MV, dz_BT, el_GR.UTF-8, el_GR, el_CY.UTF-8, el_CY, en_AG, en_AU.UTF-8, en_AU, en_BW.UTF-8, en_BW, en_CA.UTF-8, en_CA, en_DK.UTF-8, en_DK.ISO-8859-15, en_DK, en_GB.UTF-8, en_GB, en_GB.ISO-8859-15, en_HK.UTF-8, en_HK, en_IE.UTF-8, en_IE, en_IE@euro, en_IN, en_NG, en_NZ.UTF-8, en_NZ, en_PH.UTF-8, en_PH, en_SG.UTF-8, en_SG, en_US, en_US.ISO-8859-15, en_ZA.UTF-8, en_ZA, en_ZW.UTF-8, en_ZW, eo.UTF-8, eo, eo_US.UTF-8, es_AR.UTF-8, es_AR, es_BO.UTF-8, es_BO, es_CL.UTF-8, es_CL, es_CO.UTF-8, es_CO, es_CR.UTF-8, es_CR, es_DO.UTF-8, es_DO, es_EC.UTF-8, es_EC, es_ES.UTF-8, es_ES, es_ES@euro, es_GT.UTF-8, es_GT, es_HN.UTF-8, es_HN, es_MX.UTF-8, es_MX, es_NI.UTF-8, es_NI, es_PA.UTF-8, es_PA, es_PE.UTF-8, es_PE, es_PR.UTF-8, es_PR, es_PY.UTF-8, es_PY, es_SV.UTF-8, es_SV, es_US.UTF-8, es_US, es_UY.UTF-8, es_UY, es_VE.UTF-8, es_VE, et_EE.UTF-8, et_EE, et_EE.ISO-8859-15, eu_ES.UTF-8, eu_ES, eu_ES@euro, eu_FR.UTF-8, eu_FR, eu_FR@euro, fa_IR, fi_FI.UTF-8, fi_FI, fi_FI@euro, fil_PH, fo_FO.UTF-8, fo_FO, fr_BE.UTF-8, fr_BE, fr_BE@euro, fr_CA.UTF-8, fr_CA, fr_CH.UTF-8, fr_CH, fr_FR.UTF-8, fr_FR, fr_FR@euro, fr_LU.UTF-8, fr_LU, fr_LU@euro, fur_IT, fy_NL, fy_DE, ga_IE.UTF-8, ga_IE, ga_IE@euro, gd_GB.UTF-8, gd_GB, gez_ER, gez_ER@abegede, gez_ET, gez_ET@abegede, gl_ES.UTF-8, gl_ES, gl_ES@euro, gu_IN, gv_GB.UTF-8, gv_GB, ha_NG, he_IL.UTF-8, he_IL, hi_IN, hne_IN, hr_HR.UTF-8, hr_HR, hsb_DE, hsb_DE.UTF-8, ht_HT, hu_HU.UTF-8, hu_HU, hy_AM, hy_AM.ARMSCII-8, ia, id_ID.UTF-8, id_ID, ig_NG, ik_CA, is_IS.UTF-8, is_IS, it_CH.UTF-8, it_CH, it_IT.UTF-8, it_IT, it_IT@euro, iu_CA, iw_IL.UTF-8, iw_IL, ja_JP.EUC-JP, ja_JP.UTF-8, ka_GE.UTF-8, ka_GE, kk_KZ.UTF-8, kk_KZ, kk_KZ, kl_GL.UTF-8, kl_GL, km_KH, kn_IN, ko_KR.EUC-KR, ko_KR.UTF-8, ks_IN, ks_IN@devanagari, ku_TR.UTF-8, ku_TR, kw_GB.UTF-8, kw_GB, ky_KG, la_AU.UTF-8, lg_UG.UTF-8, lg_UG, li_BE, li_NL, lo_LA, lt_LT.UTF-8, lt_LT, lv_LV.UTF-8, lv_LV, mai_IN, mg_MG.UTF-8, mg_MG, mi_NZ.UTF-8, mi_NZ, mk_MK.UTF-8, mk_MK, ml_IN, mn_MN, mr_IN, ms_MY.UTF-8, ms_MY, mt_MT.UTF-8, mt_MT, nan_TW@latin, nb_NO.UTF-8, nb_NO, nds_DE, nds_NL, ne_NP, nl_AW, nl_BE.UTF-8, nl_BE, nl_BE@euro, nl_NL.UTF-8, nl_NL, nl_NL@euro, nn_NO.UTF-8, nn_NO, nr_ZA, nso_ZA, oc_FR.UTF-8, oc_FR, om_ET, om_KE.UTF-8, om_KE, or_IN, pa_IN, pa_PK, pap_AN, pl_PL.UTF-8, pl_PL, pt_BR.UTF-8, pt_BR, pt_PT.UTF-8, pt_PT, pt_PT@euro, ro_RO.UTF-8, ro_RO, ru_RU.KOI8-R, ru_RU.UTF-8, ru_RU, ru_RU.CP1251, ru_UA.UTF-8, ru_UA, rw_RW, sa_IN, sc_IT, sd_IN, sd_IN@devanagari, se_NO, shs_CA, si_LK, sid_ET, sk_SK.UTF-8, sk_SK, sl_SI.UTF-8, sl_SI, so_DJ.UTF-8, so_DJ, so_ET, so_KE.UTF-8, so_KE, so_SO.UTF-8, so_SO, sq_AL.UTF-8, sq_AL, sr_ME, sr_RS, sr_RS@latin, ss_ZA, st_ZA.UTF-8, st_ZA, sv_FI.UTF-8, sv_FI, sv_FI@euro, sv_SE.UTF-8, sv_SE, sv_SE.ISO-8859-15, ta_IN, te_IN, tg_TJ.UTF-8, tg_TJ, th_TH.UTF-8, th_TH, ti_ER, ti_ET, tig_ER, tk_TM, tl_PH.UTF-8, tl_PH, tn_ZA, tr_CY.UTF-8, tr_CY, tr_TR.UTF-8, tr_TR, ts_ZA, tt_RU.UTF-8, tt_RU@iqtelif.UTF-8, ug_CN, uk_UA.UTF-8, uk_UA, ur_PK, uz_UZ.UTF-8, uz_UZ, uz_UZ@cyrillic, ve_ZA, vi_VN.TCVN, vi_VN, wa_BE, wa_BE@euro, wa_BE.UTF-8, wal_ET, wo_SN, xh_ZA.UTF-8, xh_ZA, yi_US.UTF-8, yi_US, yo_NG, zh_CN.GB18030, zh_CN.GBK, zh_CN.UTF-8, zh_CN, zh_HK.UTF-8, zh_HK, zh_SG.UTF-8, zh_SG.GBK, zh_SG, zh_TW.EUC-TW, zh_TW.UTF-8, zh_TW, zu_ZA.UTF-8, zu_ZA
+d-i	localechooser/supported-locales	multiselect	en_US.UTF-8
+# Failed to install the base system
+bootstrap-base	base-installer/debootstrap-failed	error	
+# Go back to the menu and correct errors?
+partman-ext3	partman-ext3/check_failed	boolean	
+# LVM configuration action:
+# Choices: 
+partman-lvm	partman-lvm/mainmenu	select	
+# Error while creating a new logical volume
+partman-lvm	partman-lvm/lvcreate_exists	error	
+# Location of initial preconfiguration file:
+d-i	preseed/url	string	
+# for internal use
+d-i	console-setup/variantcode	string	
+# Base system installation error
+bootstrap-base	base-installer/debootstrap/error-exitcode	error	
+# Use restricted software?
+apt-mirror-setup	apt-setup/restricted	boolean	true
+# Do you want to return to the partitioning menu?
+partman-ext3	partman-ext3/bad_alignment	boolean	
+# Select a location in your time zone:
+# Choices: Johnston Atoll, Midway Islands, Wake Island, Select from worldwide list
+tzsetup-udeb	tzsetup/country/UM	select	
+# Number of spare devices for the RAID array:
+partman-md	partman-md/raidsparecount	string	
+# for internal use; can be preseeded
+d-i	preseed/late_command	string	
+# Copy operation failure
+partman-partitioning	partman-partitioning/copy_commit_failed	error	
+# Partitioning method:
+# Choices: 
+partman-auto	partman-auto/automatically_partition	select	
+# Configuration of encrypted volumes failed
+partman-crypto	partman-crypto/commit_failed	error	
+# Empty password
+partman-iscsi	partman-iscsi/login/empty_password	error	
+# Failed to run preseeded command
+d-i	preseed/command_failed	error	
+# Modules to load:
+# Choices: 
+d-i	hw-detect/select_modules	multiselect	
+# The resize operation is impossible
+partman-partitioning	partman-partitioning/impossible_resize	error	
+# Encryption package installation failure
+partman-crypto	partman-crypto/module_package_missing	error	
+#  is too big
+partman-auto-lvm	partman-auto-lvm/big_guided_size	error	
+# for internal use only
+user-setup-udeb	passwd/auto-login	boolean	false
+# for internal use; can be preseeded
+partman-auto-raid	partman-auto-raid/recipe	string	
+# Encryption method for this partition:
+# Choices: 
+partman-crypto	partman-crypto/crypto_type	select	
+# Continue the installation in the selected language?
+d-i	localechooser/translation/warn-light	boolean	true
+# Choose a country, territory or area:
+# Choices: Aruba, Belgium, Netherlands, other
+d-i	localechooser/shortlist/nl	select	
+# Invalid mount point
+partman-basicfilesystems	partman-basicfilesystems/bad_mountpoint	error	
+# Type of encryption key hash for this partition:
+# Choices: 
+partman-crypto	partman-crypto/keyhash	select	
+# Identical labels for two file systems
+partman-target	partman-target/same_label	error	
+# Installation medium on 
+partman-base	partman/installation_medium_mounted	note	
+# Create new empty partition table on this device?
+partman-partitioning	partman-partitioning/confirm_new_label	boolean	false
+# Write the changes to disks?
+partman-base	partman/confirm_nooverwrite	boolean	false
+# No logical volume found
+partman-lvm	partman-lvm/lvdelete_nolv	error	
+# Keyboard model:
+# Choices: A4Tech KB-21, A4Tech KBS-8, A4Tech Wireless Desktop RFKB-23, ACPI Standard, Acer AirKey V, Acer C300, Acer Ferrari 4000, Acer Laptop, Advance Scorpius KI, Amiga, Apple, Apple Aluminium Keyboard (ANSI), Apple Aluminium Keyboard (ISO), Apple Aluminium Keyboard (JIS), Apple Laptop, Asus Laptop, Atari TT, Azona RF2300 wireless Internet Keyboard, BTC 5090, BTC 5113RF Multimedia, BTC 5126T, BTC 6301URF, BTC 9000, BTC 9000A, BTC 9001AH, BTC 9019U, BTC 9116U Mini Wireless Internet and Gaming, BenQ X-Touch, BenQ X-Touch 730, BenQ X-Touch 800, Brother Internet Keyboard, Cherry B.UNLIMITED, Cherry Blue Line CyBo@rd, Cherry Blue Line CyBo@rd (alternate option), Cherry CyBo@rd USB-Hub, Cherry CyMotion Expert, Cherry CyMotion Master Linux, Cherry CyMotion Master XPress, Chicony Internet Keyboard, Chicony KB-9885, Chicony KU-0108, Chicony KU-0420, Classmate PC, Compaq Easy Access Keyboard, Compaq Internet Keyboard (13 keys), Compaq Internet Keyboard (18 keys), Compaq Internet Keyboard (7 keys), Compaq iPaq Keyboard, Creative Desktop Wireless 7000, DTK2000, Dell, Dell 101-key PC, Dell Laptop/notebook Inspiron 6xxx/8xxx, Dell Laptop/notebook Precision M series, Dell Latitude series laptop, Dell Precision M65, Dell SK-8125, Dell SK-8135, Dell USB Multimedia Keyboard, Dexxa Wireless Desktop Keyboard, Diamond 9801 / 9802 series, Do not configure keyboard; keep kernel keymap, Ennyah DKB-1008, Evdev-managed keyboard, Everex STEPnote, FL90, Fujitsu-Siemens Computers AMILO laptop, Generic 101-key PC, Generic 102-key (Intl) PC, Generic 104-key PC, Generic 105-key (Intl) PC, Genius Comfy KB-12e, Genius Comfy KB-16M / Genius MM Keyboard KWD-910, Genius Comfy KB-21e-Scroll, Genius KB-19e NB, Genius KKB-2050HS, Gyration, Happy Hacking Keyboard, Happy Hacking Keyboard for Mac, Hewlett-Packard Internet Keyboard, Hewlett-Packard Mini 110 Notebook, Hewlett-Packard Omnibook 500 FA, Hewlett-Packard Omnibook 5xx, Hewlett-Packard Omnibook 6000/6100, Hewlett-Packard Omnibook XE3 GC, Hewlett-Packard Omnibook XE3 GF, Hewlett-Packard Omnibook XT1000, Hewlett-Packard Pavilion ZT11xx, Hewlett-Packard Pavilion dv5, Hewlett-Packard SK-250x Multimedia Keyboard, Hewlett-Packard nx9020, Honeywell Euroboard, IBM Rapid Access, IBM Rapid Access II, IBM Space Saver, IBM ThinkPad 560Z/600/600E/A22E, IBM ThinkPad R60/T60/R61/T61, IBM ThinkPad Z60m/Z60t/Z61m/Z61t, Intelligent Keyboard K04, Keytronic FlexPro, Laptop/notebook Compaq (eg. Armada) Laptop Keyboard, Laptop/notebook Compaq (eg. Presario) Internet Keyboard, Laptop/notebook eMachines m68xx, Logitech Access Keyboard, Logitech Cordless Desktop, Logitech Cordless Desktop (alternate option), Logitech Cordless Desktop EX110, Logitech Cordless Desktop LX-300, Logitech Cordless Desktop Navigator, Logitech Cordless Desktop Optical, Logitech Cordless Desktop Pro (alternate option 2), Logitech Cordless Desktop iTouch, Logitech Cordless Freedom/Desktop Navigator, Logitech G15 extra keys via G15daemon, Logitech Generic Keyboard, Logitech Internet 350 Keyboard, Logitech Internet Keyboard, Logitech Internet Navigator Keyboard, Logitech Media Elite Keyboard, Logitech Ultra-X Cordless Media Desktop Keyboard, Logitech Ultra-X Keyboard, Logitech diNovo Edge Keyboard, Logitech diNovo Keyboard, Logitech iTouch, Logitech iTouch Cordless Keyboard (model Y-RB6), Logitech iTouch Internet Navigator Keyboard SE, Logitech iTouch Internet Navigator Keyboard SE (USB), MacBook/MacBook Pro, MacBook/MacBook Pro (Intl), Macintosh, Macintosh Old, Memorex MX1998, Memorex MX2500 EZ-Access Keyboard, Memorex MX2750, Microsoft Comfort Curve Keyboard 2000, Microsoft Internet Keyboard, Microsoft Internet Keyboard Pro\, Swedish, Microsoft Natural, Microsoft Natural Keyboard Elite, Microsoft Natural Keyboard Pro / Microsoft Internet Keyboard Pro, Microsoft Natural Keyboard Pro OEM, Microsoft Natural Keyboard Pro USB / Microsoft Internet Keyboard Pro, Microsoft Natural Wireless Ergonomic Keyboard 7000, Microsoft Office Keyboard, Microsoft Wireless Multimedia Keyboard 1.0A, Northgate OmniKey 101, OLPC, Ortek MCK-800 MM/Internet keyboard, PC-98xx Series, Propeller Voyager (KTEZ-1000), QTronix Scorpius 98N+, SILVERCREST Multimedia Wireless Keyboard, SK-1300, SK-2500, SK-6200, SK-7100, SVEN Ergonomic 2500, SVEN Slim 303, Samsung SDM 4500P, Samsung SDM 4510P, Sun Type 4, Sun Type 5, Sun Type 5/6, Super Power Multimedia Keyboard, Symplon PaceBook (tablet PC), Targa Visionary 811, Toshiba Satellite S3000, Trust Direct Access Keyboard, Trust Slimline, Trust Wireless Keyboard Classic, TypeMatrix EZ-Reach 2020, TypeMatrix EZ-Reach 2030 PS2, TypeMatrix EZ-Reach 2030 USB, TypeMatrix EZ-Reach 2030 USB (102/105:EU mode), TypeMatrix EZ-Reach 2030 USB (106:JP mode), Unitek KB-1925, ViewSonic KU-306 Internet Keyboard, Winbook Model XP5, Yahoo! Internet Keyboard
+d-i	console-setup/model	select	Generic 105-key (Intl) PC
+# Font size:
+# Choices: 
+d-i	console-setup/fontsize-fb	select	16
+# Failed to download Kickstart file
+d-i	initrd-kickseed/wget-failed	error	
+# Keep current partition layout and configure RAID?
+partman-md	partman-md/confirm_nochanges	boolean	false
+# Remove existing software RAID partitions?
+partman-md	partman-md/device_remove_md	boolean	false
+# Layout of the RAID10 array:
+partman-md	partman-md/raid10layout	string	
+# Unable to install 
+bootstrap-base	base-installer/kernel/failed-package-install	error	
+# Installation complete
+finish-install	finish-install/reboot_in_progress	note	
+# The free space starts from  and ends at .
+partman-base	partman/show_free_chs	note	
+# Language packs to install
+# Choices: aa ace af am an ar as ast az be ber bg bn bo br bs bua byn ca ceb co cs csb cy da de dsb dv dz el en eo es et eu fa fi fil fo fr fur fy ga gd gl gn grc gu he hi hr ht hu hy ia id is it ja jbo jv ka kab kk km kn ko ku ky la lb lg li ln lo lt lv mg mi mk ml mn mr ms mt my nap nb nds ne nl nn no nr nso oc om or pa pl ps pt qu rm ro ru rw sc sco sd se si sk sl so sq sr st sv sw ta te tet tg th ti tk tl tlh tr ts ug uk ur uz ve vi wa wo xh yi yo zh zu
+pkgsel	pkgsel/language-packs	multiselect	
+# for internal use; can be preseeded
+pkgsel	pkgsel/include	string	
+# Choose a country, territory or area:
+# Choices: British Indian Ocean Territory, Christmas Island, Cocos (Keeling) Islands, Comoros, French Southern Territories, Heard Island and McDonald Islands, Madagascar, Maldives, Mauritius, Mayotte, Reunion, Seychelles
+d-i	localechooser/countrylist/Indian_Ocean	select	
+# The NTFS partition is unclean, probably the system was not 
+partman-auto-loop	partman-auto-loop/unclean_ntfs	error	
+# for internal use; can be preseeded
+d-i	preseed/boot_command	string	
+# Install the GRUB boot loader to the master boot record?
+grub-installer	grub-installer/only_debian	boolean	true
+# Partition name:
+partman-partitioning	partman-partitioning/set_name	string	
+# Web server started
+d-i	save-logs/httpd_running	note	
+# Choose a locale:
+# Choices: en_US.UTF-8, en_US, en_US.ISO-8859-15
+d-i	debian-installer/locale	select	en_US.UTF-8
+# Logical Volume Manager not available
+partman-lvm	partman-lvm/nolvm	error	
+# for internal use; can be preseeded
+bootstrap-base	base-installer/install-recommends	boolean	true
+# Gateway:
+d-i	netcfg/get_gateway	string	
+# LILO installation failed.  Continue anyway?
+lilo-installer	lilo-installer/apt-install-failed	boolean	true
+# Netmask:
+d-i	netcfg/get_netmask	string	255.255.255.0
+# Mount options:
+# Choices: 
+partman-basicfilesystems	partman-basicfilesystems/mountoptions	multiselect	
+# Type of wireless network:
+# Choices: Infrastructure (Managed) network, Ad-hoc network (Peer to peer)
+d-i	netcfg/wireless_adhoc_managed	select	Infrastructure (Managed) network
+# iSCSI target username for :
+partman-iscsi	partman-iscsi/login/incoming_username	string	

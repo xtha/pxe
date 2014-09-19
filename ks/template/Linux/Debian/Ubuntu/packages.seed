@@ -1,0 +1,15 @@
+########################################################
+# Individual additional packages to install
+########################################################
+d-i pkgsel/include string build-essential
+d-i pkgsel/updatedb boolean true
+d-i cdrom-detect/eject boolean false
+########################################################
+# Package selection
+########################################################
+tasksel tasksel/first multiselect standard
+d-i pkgsel/include string ubuntu-minimal openssh-server screen curl wget
+# build-essential
+d-i pkgsel/upgrade select none
+d-i pkgsel/language-packs multiselect en, zh
+d-i pkgsel/update-policy select none

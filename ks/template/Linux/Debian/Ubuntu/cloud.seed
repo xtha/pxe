@@ -1,0 +1,121 @@
+###################################################
+# Locale sets language and country.
+###################################################
+d-i debian-installer/locale string en_US
+###################################################
+# Keyboard selection.
+###################################################
+d-i console-setup/ask_detect boolean false
+d-i console-setup/layoutcode string us
+###################################################
+# Network configuration.
+###################################################
+d-i netcfg/choose_interface select auto
+d-i netcfg/get_hostname string 
+d-i netcfg/get_domain string 
+
+#d-i netcfg/get_nameservers string 192.168.128.128
+#d-i netcfg/get_ipaddress string 192.168.242.250
+#d-i netcfg/get_netmask string 255.255.255.0
+#d-i netcfg/get_gateway string 192.168.242.1
+#d-i netcfg/confirm_static boolean true
+
+###################################################
+# Mirror settings
+###################################################
+d-i mirror/protocol string http
+d-i mirror/country string manual
+
+d-i mirror/http/hostname string 10.24.4.97
+d-i mirror/http/directory string /os/linux/ubuntu/10.04.4/x86_64/server
+#d-i mirror/suite string lucid
+########################################################
+# Apt setup
+########################################################
+d-i apt-setup/use_mirror boolean false
+d-i apt-setup/services-select multiselect security
+d-i apt-setup/security_host string squid.hdtr.com:3142
+d-i apt-setup/security_path string /ubuntu
+d-i debian-installer/allow_unauthenticated string true
+########################################################
+# Individual additional packages to install
+########################################################
+d-i pkgsel/include string build-essential
+d-i pkgsel/updatedb boolean true
+d-i cdrom-detect/eject boolean false
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean false
+########################################################
+# Package selection
+########################################################
+tasksel tasksel/first multiselect standard
+d-i pkgsel/include string openssh-server xinetd build-essential
+d-i pkgsel/upgrade select none
+d-i pkgsel/language-packs multiselect en, zh
+d-i pkgsel/update-policy select none
+# Boot loader installation
+d-i grub-installer/only_debian boolean true
+########################################################
+# Suite to use for loading installer components (optional)
+########################################################
+#d-i mirror/udeb/suite string lucid
+########################################################
+# Components to use for loading installer components (optional)
+########################################################
+d-i mirror/udeb/components multiselect main, restricted
+########################################################
+# Clock and time zone setup
+########################################################
+d-i mirror/http/proxy string 
+d-i clock-setup/utc boolean false
+d-i time/zone string Asia/Chongqing
+d-i clock-setup/utc boolean true
+d-i clock-setup/ntp-server string ntp.hdtr.com
+d-i debian-installer/splash boolean false
+########################################################
+# Partitioning
+########################################################
+d-i partman-auto/method string lvm
+d-i partman-lvm/device_remove_lvm boolean true
+d-i partman-md/device_remove_md boolean true
+d-i partman-lvm/confirm boolean true
+d-i partman-auto-lvm/guided_size string max
+d-i partman-auto/choose_recipe select atomic
+d-i partman/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+########################################################
+# Base system installation
+########################################################
+# Always install the virtual kernel, with no headers.
+d-i base-installer/kernel/image string linux-generic
+d-i base-installer/kernel/override-image    string linux-virtual
+d-i base-installer/kernel/headers   boolean false
+########################################################
+# Account setup
+########################################################
+d-i passwd/root-login boolean true
+d-i passwd/root-password password p@$$word
+d-i passwd/root-password-again password p@$$word
+d-i passwd/make-user boolean false
+d-i user-setup/encrypt-home boolean false
+########################################################
+# This command is run just before the install finishes, but when there is
+# still a usable /target directory. You can chroot to /target and use it
+# directly, or use the apt-install and in-target commands to easily install
+# packages and run commands in the target system.
+########################################################
+d-i preseed/late_command string \
+chvt 4 && chroot /target sh -c "wget http://10.24.4.97/pxe/ks/linux/ubuntu/10.04.4/x86_64/postrun.sh && /bin/sh postrun.sh";
+
+#in-target mv /etc/resolvconf/resolv.conf.d/original /etc/resolvconf/resolv.conf.d/tail; \
+#in-target sed -i -e 's/http:\/\/boot.smidsrod.lan\/ubuntu-12.04-server-amd64/http:\/\/no.archive.ubuntu.com\/ubuntu/' /etc/apt/sources.list; \
+#in-target apt-get -qq update; apt-install joe; \
+#in-target sed -i -e 's/GRUB_CMDLINE_LINUX_DEFAULT=\"quiet\"/GRUB_CMDLINE_LINUX_DEFAULT=\"\"/' /etc/default/grub; \
+#in-target sed -i -e 's/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"iscsi_initiator=iqn.2011-02.lan.smidsrod:$(hostname)\"/' /etc/default/grub; \
+#in-target update-grub;
+########################################################
+# Finishing up the installation
+########################################################
+d-i finish-install/reboot_in_progress note

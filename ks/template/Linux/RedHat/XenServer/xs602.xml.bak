@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<installation mode="fresh" srtype="lvm">
+<bootloader>grub</bootloader>
+<primary-disk>sda</primary-disk>
+<keymap>us</keymap>
+<hostname>xs227.gdcloud.com</hostname>
+<root-password>Tianren.143~m</root-password>
+<source type="url">http://192.168.14.250/pxe/os/xs602/</source>
+<name-server>192.168.11.10</name-server>
+<name-server>202.106.0.20</name-server>
+<name-server>8.8.8.8</name-server>
+<time-config-method>ntp</time-config-method>
+<ntp-server>192.168.11.10</ntp-server>
+<ntp-server>ntp.fudan.edu.cn</ntp-server>
+<admin-interface name="eth2" proto="static">
+<ip>192.168.14.227</ip>
+<subnet-mask>255.255.255.0</subnet-mask>
+<gateway>192.168.14.254</gateway>
+</admin-interface>
+<timezone>Asia/Shanghai</timezone>
+</installation>

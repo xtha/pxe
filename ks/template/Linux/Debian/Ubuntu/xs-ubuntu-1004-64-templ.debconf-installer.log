@@ -1,0 +1,552 @@
+apt-mirror-setup	apt-setup/backports	boolean	false
+apt-mirror-setup	apt-setup/contrib	boolean	false
+apt-mirror-setup	apt-setup/mirror/error	select	Retry
+apt-mirror-setup	apt-setup/multiverse	boolean	true
+apt-mirror-setup	apt-setup/no_mirror	boolean	false
+apt-mirror-setup	apt-setup/non-free	boolean	false
+apt-mirror-setup	apt-setup/partner	boolean	false
+apt-mirror-setup	apt-setup/proposed	boolean	false
+apt-mirror-setup	apt-setup/restricted	boolean	true
+apt-mirror-setup	apt-setup/universe	boolean	true
+apt-mirror-setup	apt-setup/use_mirror	boolean	
+apt-setup-udeb	apt-setup/security_host	string	security.ubuntu.com
+apt-setup-udeb	apt-setup/security_path	string	/ubuntu
+apt-setup-udeb	apt-setup/service-failed	error	
+apt-setup-udeb	apt-setup/services-select	multiselect	security
+apt-setup-udeb	apt-setup/volatile_host	string	volatile.debian.org
+base-installer	base-installer/no_target_mounted	error	
+base-installer	base-installer/unclean_target_cancel	error	
+base-installer	base-installer/use_unclean_target	boolean	true
+bootstrap-base	base-installer/cannot_install	error	
+bootstrap-base	base-installer/debootstrap/error-abnormal	error	
+bootstrap-base	base-installer/debootstrap/error/couldntdl	error	
+bootstrap-base	base-installer/debootstrap/error-exitcode	error	
+bootstrap-base	base-installer/debootstrap/error/invalidrel	error	
+bootstrap-base	base-installer/debootstrap/error/missingrelentry	error	
+bootstrap-base	base-installer/debootstrap/error/nogetrel	error	
+bootstrap-base	base-installer/debootstrap/error/nogetrelsig	error	
+bootstrap-base	base-installer/debootstrap/error/unknownrelsig	error	
+bootstrap-base	base-installer/debootstrap-failed	error	
+bootstrap-base	base-installer/debootstrap/fallback-error	error	
+bootstrap-base	base-installer/debootstrap/fallback-warning	error	
+bootstrap-base	base-installer/debootstrap_script	string	
+bootstrap-base	base-installer/excludes	string	
+bootstrap-base	base-installer/includes	string	
+bootstrap-base	base-installer/initramfs/generator	select	
+bootstrap-base	base-installer/initramfs-tools/driver-policy	select	most
+bootstrap-base	base-installer/initramfs/unsupported	error	
+bootstrap-base	base-installer/install-recommends	boolean	true
+bootstrap-base	base-installer/kernel/backports-modules	string	
+bootstrap-base	base-installer/kernel/failed-install	error	
+bootstrap-base	base-installer/kernel/failed-package-install	error	
+bootstrap-base	base-installer/kernel/headers	boolean	true
+bootstrap-base	base-installer/kernel/image	select	linux-generic
+bootstrap-base	base-installer/kernel/linux/extra-packages-2.6	string	
+bootstrap-base	base-installer/kernel/linux/extra-packages	string	
+bootstrap-base	base-installer/kernel/linux/initramfs-generators	string	initramfs-tools yaird
+bootstrap-base	base-installer/kernel/linux/initramfs-tools/driver-policy	string	most
+bootstrap-base	base-installer/kernel/linux/initrd-2.6	boolean	true
+bootstrap-base	base-installer/kernel/linux/link_in_boot	boolean	false
+bootstrap-base	base-installer/kernel/no-kernels-found	error	
+bootstrap-base	base-installer/kernel/override-image	string	
+bootstrap-base	base-installer/kernel/skip-install	boolean	false
+bootstrap-base	base-installer/no_codename	error	
+clock-setup	clock-setup/hwclock-wait	boolean	false
+clock-setup	clock-setup/ntp	boolean	true
+clock-setup	clock-setup/ntp-server	string	ntp.ubuntu.com
+clock-setup	clock-setup/system-time-changed	boolean	true
+clock-setup	clock-setup/utc-auto	boolean	false
+clock-setup	clock-setup/utc	boolean	true
+d-i	anna/choose_modules_lowmem	multiselect	
+d-i	anna/choose_modules	multiselect	
+d-i	anna/install_failed	error	
+d-i	anna/no_kernel_modules	boolean	false
+d-i	anna/retriever	string	net-retriever
+d-i	anna/standard_modules	boolean	true
+d-i	console-setup/altgr	select	No AltGr key
+d-i	console-setup/ask_detect	boolean	false
+d-i	console-setup/charmap	select	UTF-8
+d-i	console-setup/codesetcode	string	Lat15
+d-i	console-setup/codeset	select	# Latin1 and Latin5 - western Europe and Turkic languages
+d-i	console-setup/compose	select	No compose key
+d-i	console-setup/detect	detect-keyboard	
+d-i	console-setup/detected	note	
+d-i	console-setup/fontface	select	VGA
+d-i	console-setup/fontsize-fb	select	16
+d-i	console-setup/fontsize	string	16
+d-i	console-setup/fontsize-text	select	16
+d-i	console-setup/layoutcode	string	us
+d-i	console-setup/layout	select	USA
+d-i	console-setup/modelcode	string	pc105
+d-i	console-setup/model	select	Generic 105-key (Intl) PC
+d-i	console-setup/optionscode	string	
+d-i	console-setup/switch	select	No temporary switch
+d-i	console-setup/toggle	select	No toggling
+d-i	console-setup/ttys	string	/dev/tty[1-6]
+d-i	console-setup/unsupported_config_layout	boolean	true
+d-i	console-setup/unsupported_config_options	boolean	true
+d-i	console-setup/unsupported_layout	boolean	true
+d-i	console-setup/unsupported_options	boolean	true
+d-i	console-setup/variantcode	string	
+d-i	console-setup/variant	select	USA
+d-i	debconf/frontend	string	newt
+d-i	debconf/language	string	en
+d-i	debconf/priority	select	high
+d-i	debconf/showold	boolean	false
+d-i	debconf/translations-dropped	boolean	true
+d-i	debian-installer/add-kernel-opts	string	
+d-i	debian-installer/allow_unauthenticated	boolean	false
+d-i	debian-installer/charmap	string	UTF-8
+d-i	debian-installer/consoledisplay	string	console-setup
+d-i	debian-installer/country	string	US
+d-i	debian-installer/dummy	string	
+d-i	debian-installer/exit/always_halt	boolean	false
+d-i	debian-installer/exit/halt	boolean	false
+d-i	debian-installer/exit/poweroff	boolean	false
+d-i	debian-installer/fallbacklocale	select	en_US.UTF-8
+d-i	debian-installer/framebuffer	boolean	true
+d-i	debian-installer/language	string	en
+d-i	debian-installer/locale	select	en_US.UTF-8
+d-i	debian-installer/main-menu/item-failure	error	
+d-i	debian-installer/main-menu	select	Finish the installation
+d-i	debian-installer/missing-provide	select	${DEFAULT}
+d-i	debian-installer/shell-plugin	terminal	
+d-i	debian-installer/terminal-plugin-unavailable	error	
+d-i	debian-installer/theme	string	
+d-i	di-utils-reboot/really_reboot	boolean	false
+d-i	di-utils-shell/do-shell	note	
+d-i	ethdetect/cannot_find	error	
+d-i	ethdetect/module_select	select	no ethernet card
+d-i	ethdetect/use_firewire_ethernet	boolean	false
+d-i	hw-detect/load_firmware	boolean	true
+d-i	hw-detect/load-ide	boolean	false
+d-i	hw-detect/load_media	boolean	false
+d-i	hw-detect/modprobe_error	error	
+d-i	hw-detect/pcmcia_resources	string	
+d-i	hw-detect/retry_params	string	
+d-i	hw-detect/select_modules	multiselect	
+d-i	hw-detect/start_pcmcia	boolean	true
+d-i	initrd-kickseed/nfs-mount-failed	error	
+d-i	initrd-kickseed/wget-failed	error	
+d-i	localechooser/continentlist	select	
+d-i	localechooser/countrylist/Africa	select	
+d-i	localechooser/countrylist/Antarctica	select	
+d-i	localechooser/countrylist/Asia	select	
+d-i	localechooser/countrylist/Atlantic_Ocean	select	
+d-i	localechooser/countrylist/Caribbean	select	
+d-i	localechooser/countrylist/Central_America	select	
+d-i	localechooser/countrylist/Europe	select	
+d-i	localechooser/countrylist/Indian_Ocean	select	
+d-i	localechooser/countrylist/North_America	select	
+d-i	localechooser/countrylist/Oceania	select	
+d-i	localechooser/countrylist/South_America	select	
+d-i	localechooser/languagelist	select	en
+d-i	localechooser/shortlist/ar	select	
+d-i	localechooser/shortlist/bn	select	
+d-i	localechooser/shortlist/ca	select	
+d-i	localechooser/shortlist/de	select	
+d-i	localechooser/shortlist/el	select	
+d-i	localechooser/shortlist/en	select	
+d-i	localechooser/shortlist/es	select	
+d-i	localechooser/shortlist/eu	select	
+d-i	localechooser/shortlist/fr	select	
+d-i	localechooser/shortlist/it	select	
+d-i	localechooser/shortlist/nl	select	
+d-i	localechooser/shortlist/pa	select	
+d-i	localechooser/shortlist/pt_BR	select	
+d-i	localechooser/shortlist/pt	select	
+d-i	localechooser/shortlist/ru	select	
+d-i	localechooser/shortlist	select	US
+d-i	localechooser/shortlist/sr	select	
+d-i	localechooser/shortlist/sv	select	
+d-i	localechooser/shortlist/tr	select	
+d-i	localechooser/shortlist/zh_CN	select	
+d-i	localechooser/shortlist/zh_TW	select	
+d-i	localechooser/supported-locales	multiselect	en_US.UTF-8
+d-i	localechooser/translation/none-yet	note	
+d-i	localechooser/translation/no-select	note	
+d-i	localechooser/translation/warn-light	boolean	true
+d-i	localechooser/translation/warn-severe	boolean	false
+d-i	lowmem/insufficient	error	
+d-i	lowmem/low	note	
+d-i	mirror/bad	error	
+d-i	mirror/codename	string	lucid
+d-i	mirror/country	string	manual
+d-i	mirror/ftp/directory	string	/ubuntu/
+d-i	mirror/ftp/hostname	string	
+d-i	mirror/ftp/proxy	string	
+d-i	mirror/http/countries	select	manual
+d-i	mirror/http/directory	string	/os/linux/ubuntu/10.04.4/x86_64/server
+d-i	mirror/http/hostname	string	10.24.4.84
+d-i	mirror/http/mirror	select	CC.archive.ubuntu.com
+d-i	mirror/http/proxy	string	
+d-i	mirror/noarch	error	
+d-i	mirror/protocol	select	http
+d-i	mirror/suite	select	lucid
+d-i	mirror/udeb/components	multiselect	main, restricted
+d-i	netcfg/bad_ipaddress	error	
+d-i	netcfg/choose_interface	select	
+d-i	netcfg/confirm_static	boolean	true
+d-i	netcfg/dhcp_failed	note	
+d-i	netcfg/dhcp_hostname	string	
+d-i	netcfg/dhcp_options	select	Configure network manually
+d-i	netcfg/disable_dhcp	boolean	false
+d-i	netcfg/error	error	
+d-i	netcfg/gateway_unreachable	error	
+d-i	netcfg/get_domain	string	gdcloud.com
+d-i	netcfg/get_gateway	string	
+d-i	netcfg/get_hostname	string	localhost
+d-i	netcfg/get_ipaddress	string	
+d-i	netcfg/get_nameservers	string	
+d-i	netcfg/get_netmask	string	255.255.255.0
+d-i	netcfg/get_pointopoint	string	
+d-i	netcfg/invalid_essid	error	
+d-i	netcfg/invalid_hostname	error	
+d-i	netcfg/invalid_wep	error	
+d-i	netcfg/kill_switch_enabled	note	
+d-i	netcfg/network-manager	boolean	true
+d-i	netcfg/no_default_route	boolean	
+d-i	netcfg/no_dhcp_client	error	
+d-i	netcfg/no_interfaces	error	
+d-i	netcfg/use_dhcp	boolean	true
+d-i	netcfg/wireless_adhoc_managed	select	Infrastructure (Managed) network
+d-i	netcfg/wireless_essid_again	string	
+d-i	netcfg/wireless_essid	string	
+d-i	netcfg/wireless_wep	string	
+d-i	oem-config/enable	boolean	false
+d-i	partman-crypto/confirm_nooverwrite	boolean	false
+d-i	partman-lvm/confirm_nooverwrite	boolean	false
+d-i	partman-md/confirm_nooverwrite	boolean	false
+d-i	preseed/boot_command	string	
+d-i	preseed/command_failed	error	
+d-i	preseed/early_command	string	
+d-i	preseed/include/checksum	string	
+d-i	preseed/include_command	string	
+d-i	preseed/include	string	
+d-i	preseed/interactive	boolean	false
+d-i	preseed/late_command	string	
+d-i	preseed/load_error	error	
+d-i	preseed/retrieve_error	error	
+d-i	preseed/run	string	
+d-i	preseed/url/checksum	string	
+d-i	preseed/url	string	
+d-i	rescue/enable	boolean	false
+d-i	retriever/net/error	select	Retry
+d-i	save-logs/bad_directory	error	
+d-i	save-logs/directory	string	/mnt
+d-i	save-logs/floppy_mount_failed	error	
+d-i	save-logs/httpd_running	note	
+d-i	save-logs/insert_floppy	note	
+d-i	save-logs/menu	select	
+d-i	save-logs/no_network	note	
+disk-detect	disk-detect/activate_dmraid	boolean	true
+disk-detect	disk-detect/cannot_find	error	
+disk-detect	disk-detect/module_select	select	continue with no disk drive
+disk-detect	disk-detect/multipath/enable	boolean	false
+d-i	tasksel/first	multiselect	OpenSSH server
+d-i	time/zone	select	Asia/Chongqing
+finish-install	finish-install/keep-consoles	boolean	false
+finish-install	finish-install/reboot_in_progress	note	
+grub-installer	grub-installer/apt-install-failed	error	
+grub-installer	grub-installer/bootdev_directory	string	
+grub-installer	grub-installer/bootdev	string	
+grub-installer	grub-installer/grub2_instead_of_grub_legacy	boolean	true
+grub-installer	grub-installer/grub-install-failed	error	
+grub-installer	grub-installer/grub_not_mature_on_this_platform	boolean	false
+grub-installer	grub-installer/make_active	boolean	true
+grub-installer	grub-installer/multipath	boolean	true
+grub-installer	grub-installer/multipath-error	error	
+grub-installer	grub-installer/only_debian	boolean	true
+grub-installer	grub-installer/password-mismatch	error	
+grub-installer	grub-installer/sataraid	boolean	true
+grub-installer	grub-installer/sataraid-error	error	
+grub-installer	grub-installer/skip	boolean	false
+grub-installer	grub-installer/update-grub-failed	error	
+grub-installer	grub-installer/with_other_os	boolean	true
+lilo-installer	lilo-installer/activate-part	boolean	true
+lilo-installer	lilo-installer/apt-install-failed	boolean	true
+lilo-installer	lilo-installer/bootdev_raid	select	
+lilo-installer	lilo-installer/bootdev	select	
+lilo-installer	lilo-installer/failed	error	
+lilo-installer	lilo-installer/manual_bootdev_error	error	
+lilo-installer	lilo-installer/manual_bootdev	string	
+lilo-installer	lilo-installer/serial-console	note	
+lilo-installer	lilo-installer/skip	boolean	false
+mdadm-udeb	mdadm/boot_degraded	boolean	false
+nobootloader	nobootloader/confirmation_common	note	
+nobootloader	nobootloader/confirmation_powerpc_chrp_pegasos	note	
+nobootloader	nobootloader/confirmation_powerpc_pasemi	note	
+nobootloader	nobootloader/mounterr	error	
+partman-auto-loop	partman-auto-loop/unclean_host	error	
+partman-auto-loop	partman-auto-loop/unclean_ntfs	error	
+partman-auto-lvm	partman-auto-lvm/bad_guided_size	error	
+partman-auto-lvm	partman-auto-lvm/big_guided_size	error	
+partman-auto-lvm	partman-auto-lvm/guided_size	string	8.3 GB
+partman-auto-lvm	partman-auto-lvm/new_vg_name_exists	string	
+partman-auto-lvm	partman-auto-lvm/new_vg_name	string	localhost
+partman-auto-lvm	partman-auto-lvm/no_boot	boolean	
+partman-auto-lvm	partman-auto-lvm/no_pv_in_vg	error	
+partman-auto-lvm	partman-auto-lvm/no_such_pv	error	
+partman-auto-lvm	partman-auto-lvm/small_guided_size	error	
+partman-auto-lvm	partman-auto-lvm/unusable_recipe	error	
+partman-auto-lvm	partman-auto-lvm/vg_create_error	error	
+partman-auto-lvm	partman-auto-lvm/vg_exists	error	
+partman-auto	partman-auto/automatically_partition	select	
+partman-auto	partman-auto/autopartitioning_failed	error	
+partman-auto	partman-auto/choose_recipe	select	/lib/partman/recipes/30atomic
+partman-auto	partman-auto/disk	string	
+partman-auto	partman-auto/expert_recipe_file	string	
+partman-auto	partman-auto/expert_recipe	string	
+partman-auto	partman-auto/init_automatically_partition	select	60some_device_lvm__________lvm
+partman-auto	partman-auto/method	string	
+partman-auto	partman-auto/no_recipe	error	
+partman-auto	partman-auto/resize_insufficient_space	error	
+partman-auto	partman-auto/select_disk	select	/var/lib/partman/devices/=dev=xvda
+partman-auto	partman-auto/select_disks	multiselect	
+partman-auto	partman-auto/unusable_space	error	
+partman-auto-raid	partman-auto-raid/error	error	
+partman-auto-raid	partman-auto-raid/notenoughparts	error	
+partman-auto-raid	partman-auto-raid/raidnum	string	
+partman-auto-raid	partman-auto-raid/recipe	string	
+partman-base	partman/active_partition	select	
+partman-base	partman/alignment	select	optimal
+partman-base	partman-base/devicelocked	error	
+partman-base	partman-base/partlocked	error	
+partman-base	partman/choose_partition	select	
+partman-base	partman/confirm	boolean	false
+partman-base	partman/confirm_nochanges	boolean	false
+partman-base	partman/confirm_nooverwrite	boolean	false
+partman-base	partman/default_filesystem	string	ext4
+partman-base	partman/early_command	string	
+partman-base	partman/exception_handler_note	note	
+partman-base	partman/exception_handler	select	
+partman-base	partman/filter_mounted	boolean	true
+partman-base	partman/free_space	select	
+partman-base	partman/installation_medium_mounted	note	
+partman-base	partman/show_free_chs	note	
+partman-base	partman/show_partition_chs	note	
+partman-base	partman/storage_device	select	
+partman-base	partman/unmount_active	boolean	
+partman-basicfilesystems	partman/automount	boolean	false
+partman-basicfilesystems	partman-basicfilesystems/bad_mountpoint	error	
+partman-basicfilesystems	partman-basicfilesystems/check_failed	boolean	
+partman-basicfilesystems	partman-basicfilesystems/choose_label	string	
+partman-basicfilesystems	partman-basicfilesystems/create_failed	error	
+partman-basicfilesystems	partman-basicfilesystems/create_swap_failed	error	
+partman-basicfilesystems	partman-basicfilesystems/fat_mountpoint	select	
+partman-basicfilesystems	partman-basicfilesystems/mountoptions	multiselect	
+partman-basicfilesystems	partman-basicfilesystems/mountpoint_manual	string	
+partman-basicfilesystems	partman-basicfilesystems/mountpoint	select	
+partman-basicfilesystems	partman-basicfilesystems/no_mount_point	boolean	
+partman-basicfilesystems	partman-basicfilesystems/no_swap	boolean	true
+partman-basicfilesystems	partman-basicfilesystems/posix_filesystem_required	error	
+partman-basicfilesystems	partman-basicfilesystems/specify_reserved	string	
+partman-basicfilesystems	partman-basicfilesystems/specify_usage	select	
+partman-basicfilesystems	partman-basicfilesystems/swap_check_failed	boolean	
+partman-basicmethods	partman-basicmethods/method_only	boolean	
+partman-crypto	partman-crypto/cipher	select	
+partman-crypto	partman-crypto/commit_failed	error	
+partman-crypto	partman-crypto/confirm	boolean	false
+partman-crypto	partman-crypto/confirm_nochanges	boolean	false
+partman-crypto	partman-crypto/create/nosel	error	
+partman-crypto	partman-crypto/create/partitions	multiselect	
+partman-crypto	partman-crypto/crypto_boot_not_possible	error	
+partman-crypto	partman-crypto/crypto_root_needs_boot	error	
+partman-crypto	partman-crypto/crypto_type	select	
+partman-crypto	partman-crypto/entropy	entropy	
+partman-crypto	partman-crypto/erase_failed	error	
+partman-crypto	partman-crypto/init_failed	error	
+partman-crypto	partman-crypto/install_udebs_failure	error	
+partman-crypto	partman-crypto/install_udebs_low_mem	boolean	
+partman-crypto	partman-crypto/ivalgorithm	select	
+partman-crypto	partman-crypto/keyfile-problem	error	
+partman-crypto	partman-crypto/keyhash	select	
+partman-crypto	partman-crypto/keysize	select	
+partman-crypto	partman-crypto/keytype	select	
+partman-crypto	partman-crypto/mainmenu	select	
+partman-crypto	partman-crypto/module_package_missing	error	
+partman-crypto	partman-crypto/nothing_to_setup	note	
+partman-crypto	partman-crypto/options_missing	error	
+partman-crypto	partman-crypto/passphrase-empty	error	
+partman-crypto	partman-crypto/passphrase-mismatch	error	
+partman-crypto	partman-crypto/tools_missing	note	
+partman-crypto	partman-crypto/unsafe_swap	error	
+partman-crypto	partman-crypto/use_random_for_nonswap	boolean	false
+partman-crypto	partman-crypto/warn_erase	boolean	false
+partman-crypto	partman-crypto/weak_passphrase	boolean	false
+partman-efi	partman-efi/no_efi	boolean	
+partman-ext3	partman/boot_not_first_partition	boolean	
+partman-ext3	partman-ext3/bad_alignment	boolean	
+partman-ext3	partman-ext3/boot_not_ext2_or_ext3	boolean	
+partman-ext3	partman-ext3/check_failed	boolean	
+partman-ext3	partman-ext3/create_failed	error	
+partman-ext3	partman-ext3/lazy_itable_init	boolean	false
+partman-ext3	partman-ext3/no_mount_point	boolean	
+partman-iscsi	partman-iscsi/login/address	string	
+partman-iscsi	partman-iscsi/login/all_targets	boolean	false
+partman-iscsi	partman-iscsi/login/empty_password	error	
+partman-iscsi	partman-iscsi/login/failed	error	
+partman-iscsi	partman-iscsi/login/incoming_username	string	
+partman-iscsi	partman-iscsi/login/no_targets	error	
+partman-iscsi	partman-iscsi/login/targets	multiselect	
+partman-iscsi	partman-iscsi/login/username	string	
+partman-iscsi	partman-iscsi/mainmenu	select	
+partman-jfs	partman-jfs/check_failed	boolean	
+partman-jfs	partman-jfs/create_failed	error	
+partman-jfs	partman-jfs/jfs_boot	boolean	false
+partman-jfs	partman-jfs/jfs_root	boolean	false
+partman-jfs	partman-jfs/no_mount_point	boolean	
+partman-lvm	partman-lvm/badnamegiven	error	
+partman-lvm	partman-lvm/commit_failed	error	
+partman-lvm	partman-lvm/confirm	boolean	false
+partman-lvm	partman-lvm/confirm_nochanges	boolean	false
+partman-lvm	partman-lvm/device_remove_lvm	boolean	false
+partman-lvm	partman-lvm/device_remove_lvm_span	error	
+partman-lvm	partman-lvm/displayall	note	
+partman-lvm	partman-lvm/help	note	
+partman-lvm	partman-lvm/lvcreate_error	error	
+partman-lvm	partman-lvm/lvcreate_exists	error	
+partman-lvm	partman-lvm/lvcreate_name	string	
+partman-lvm	partman-lvm/lvcreate_nofreevg	error	
+partman-lvm	partman-lvm/lvcreate_nonamegiven	error	
+partman-lvm	partman-lvm/lvcreate_size	string	
+partman-lvm	partman-lvm/lvcreate_vgnames	select	
+partman-lvm	partman-lvm/lvdelete_error	error	
+partman-lvm	partman-lvm/lvdelete_lvnames	select	
+partman-lvm	partman-lvm/lvdelete_nolv	error	
+partman-lvm	partman-lvm/mainmenu	select	
+partman-lvm	partman-lvm/nolvm	error	
+partman-lvm	partman-lvm/nopartitions	error	
+partman-lvm	partman-lvm/pvcreate_error	error	
+partman-lvm	partman-lvm/vgcreate_devnameused	error	
+partman-lvm	partman-lvm/vgcreate_error	error	
+partman-lvm	partman-lvm/vgcreate_name	string	
+partman-lvm	partman-lvm/vgcreate_nameused	error	
+partman-lvm	partman-lvm/vgcreate_nonamegiven	error	
+partman-lvm	partman-lvm/vgcreate_nosel	error	
+partman-lvm	partman-lvm/vgcreate_parts	multiselect	
+partman-lvm	partman-lvm/vgdelete_confirm	boolean	true
+partman-lvm	partman-lvm/vgdelete_error	error	
+partman-lvm	partman-lvm/vgdelete_names	select	
+partman-lvm	partman-lvm/vgdelete_novg	error	
+partman-lvm	partman-lvm/vgextend_error	error	
+partman-lvm	partman-lvm/vgextend_names	select	
+partman-lvm	partman-lvm/vgextend_nosel	error	
+partman-lvm	partman-lvm/vgextend_novg	error	
+partman-lvm	partman-lvm/vgextend_parts	multiselect	
+partman-lvm	partman-lvm/vgreduce_error	error	
+partman-lvm	partman-lvm/vgreduce_names	select	
+partman-lvm	partman-lvm/vgreduce_nosel	error	
+partman-lvm	partman-lvm/vgreduce_novg	error	
+partman-lvm	partman-lvm/vgreduce_parts	multiselect	
+partman-md	partman-md/commit_failed	error	
+partman-md	partman-md/confirm	boolean	false
+partman-md	partman-md/confirm_nochanges	boolean	false
+partman-md	partman-md/createmain	select	
+partman-md	partman-md/deletefailed	error	
+partman-md	partman-md/deletemenu	select	
+partman-md	partman-md/delete_no_md	error	
+partman-md	partman-md/deleteverify	boolean	false
+partman-md	partman-md/device_remove_md	boolean	false
+partman-md	partman-md/mainmenu	select	
+partman-md	partman-md/nomd	error	
+partman-md	partman-md/noparts	error	
+partman-md	partman-md/notenoughparts	error	
+partman-md	partman-md/raid0devs	multiselect	
+partman-md	partman-md/raid10layout	string	
+partman-md	partman-md/raiddevcount	string	
+partman-md	partman-md/raiddevs	multiselect	
+partman-md	partman-md/raidsparecount	string	
+partman-md	partman-md/raidsparedevs	multiselect	
+partman-partitioning	partman-partitioning/bad_new_partition_size	error	
+partman-partitioning	partman-partitioning/bad_new_size	error	
+partman-partitioning	partman-partitioning/big_new_size	error	
+partman-partitioning	partman-partitioning/bootable_logical	boolean	false
+partman-partitioning	partman-partitioning/choose_label	select	
+partman-partitioning	partman-partitioning/confirm_copy	boolean	
+partman-partitioning	partman-partitioning/confirm_new_label	boolean	false
+partman-partitioning	partman-partitioning/confirm_resize	boolean	
+partman-partitioning	partman-partitioning/confirm_write_new_label	boolean	false
+partman-partitioning	partman-partitioning/copy_commit_failed	error	
+partman-partitioning	partman-partitioning/impossible_resize	error	
+partman-partitioning	partman-partitioning/new_partition_place	select	
+partman-partitioning	partman-partitioning/new_partition_size	string	some number
+partman-partitioning	partman-partitioning/new_partition_type	select	
+partman-partitioning	partman-partitioning/new_size_commit_failed	error	
+partman-partitioning	partman-partitioning/new_size	string	some number
+partman-partitioning	partman-partitioning/set_flags	multiselect	
+partman-partitioning	partman-partitioning/set_name	string	
+partman-partitioning	partman-partitioning/small_new_size	error	
+partman-partitioning	partman-partitioning/source_partition	select	
+partman-partitioning	partman-partitioning/unknown_label	boolean	true
+partman-partitioning	partman-partitioning/unsupported_label	boolean	false
+partman-reiserfs	partman-reiserfs/check_failed	boolean	
+partman-reiserfs	partman-reiserfs/create_failed	error	
+partman-reiserfs	partman-reiserfs/no_mount_point	boolean	
+partman-target	partman/mount_style	select	uuid
+partman-target	partman-target/choose_method	select	
+partman-target	partman-target/clear_partitions_failed	error	
+partman-target	partman-target/help	note	
+partman-target	partman-target/mount_failed	boolean	true
+partman-target	partman-target/must_be_on_root	error	
+partman-target	partman-target/no_root	error	
+partman-target	partman-target/same_label	error	
+partman-target	partman-target/same_mountpoint	error	
+partman-target	ubiquity/partman-system-unformatted	boolean	
+partman-xfs	partman-xfs/check_failed	boolean	
+partman-xfs	partman-xfs/create_failed	error	
+partman-xfs	partman-xfs/no_mount_point	boolean	
+pkgsel	pkgsel/ignore-incomplete-language-support	boolean	false
+pkgsel	pkgsel/include/install-recommends	boolean	false
+pkgsel	pkgsel/include	string	
+pkgsel	pkgsel/install-language-support	boolean	true
+pkgsel	pkgsel/language-pack-patterns	string	language-pack-gnome-$LL
+pkgsel	pkgsel/language-packs	multiselect	
+pkgsel	pkgsel/updatedb	boolean	true
+pkgsel	pkgsel/update-policy	select	none
+pkgsel	pkgsel/upgrade	select	safe-upgrade
+tzsetup-udeb	time/zone	select	Asia/Chongqing
+tzsetup-udeb	tzsetup/country/AQ	select	
+tzsetup-udeb	tzsetup/country/AU	select	Australia/Sydney
+tzsetup-udeb	tzsetup/country/BR	select	America/Sao_Paulo
+tzsetup-udeb	tzsetup/country/CA	select	Canada/Eastern
+tzsetup-udeb	tzsetup/country/CD	select	
+tzsetup-udeb	tzsetup/country/CL	select	
+tzsetup-udeb	tzsetup/country/EC	select	
+tzsetup-udeb	tzsetup/country/ES	select	
+tzsetup-udeb	tzsetup/country/FM	select	
+tzsetup-udeb	tzsetup/country/GL	select	
+tzsetup-udeb	tzsetup/country/ID	select	
+tzsetup-udeb	tzsetup/country/KI	select	
+tzsetup-udeb	tzsetup/country/KZ	select	
+tzsetup-udeb	tzsetup/country/MN	select	
+tzsetup-udeb	tzsetup/country/MX	select	
+tzsetup-udeb	tzsetup/country/NZ	select	
+tzsetup-udeb	tzsetup/country/PF	select	
+tzsetup-udeb	tzsetup/country/PT	select	
+tzsetup-udeb	tzsetup/country/RU	select	Europe/Moscow
+tzsetup-udeb	tzsetup/country/UM	select	
+tzsetup-udeb	tzsetup/country/US	select	US/Eastern
+tzsetup-udeb	tzsetup/detected	boolean	true
+tzsetup-udeb	tzsetup/geoip_server	string	http://geoip.ubuntu.com/lookup
+tzsetup-udeb	tzsetup/select_all	select	
+tzsetup-udeb	tzsetup/selected	boolean	true
+user-setup-udeb	passwd/auto-login-backup	string	
+user-setup-udeb	passwd/auto-login	boolean	false
+user-setup-udeb	passwd/make-user	boolean	true
+user-setup-udeb	passwd/root-login	boolean	false
+user-setup-udeb	passwd/shadow	boolean	true
+user-setup-udeb	passwd/user-default-groups	string	adm cdrom dialout lpadmin plugdev sambashare
+user-setup-udeb	passwd/user-fullname	string	zh
+user-setup-udeb	passwd/username-bad	error	
+user-setup-udeb	passwd/username-reserved	error	
+user-setup-udeb	passwd/username	string	zh
+user-setup-udeb	passwd/user-uid	string	
+user-setup-udeb	user-setup/allow-password-empty	boolean	false
+user-setup-udeb	user-setup/allow-password-weak	boolean	false
+user-setup-udeb	user-setup/encrypt-home	boolean	false
+user-setup-udeb	user-setup/encrypt-home-failed	error	
+user-setup-udeb	user-setup/force-encrypt-home	boolean	false
+user-setup-udeb	user-setup/password-empty	error	
+user-setup-udeb	user-setup/password-mismatch	error	
+user-setup-udeb	user-setup/password-weak	boolean	

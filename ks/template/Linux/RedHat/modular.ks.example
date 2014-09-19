@@ -1,0 +1,93 @@
+#http://www2.math.uu.se/~chris/kickstart/
+#System language
+lang en_US
+langsupport --default en_US en_US sv_SE 
+keyboard sv-latin1
+mouse
+timezone --utc Europe/Stockholm
+
+rootpw ENTERYOURPASSWORDHERE
+
+#Reboot after installation
+reboot
+
+#Use text mode install
+text
+
+#System bootloader configuration
+bootloader --location=mbr 
+
+#Install Red Hat Linux instead of upgrade
+install
+
+#Interactive or not
+%include /tmp/interactive
+
+#Use FTP installation media
+url --url http://192.168.0.4/dist/centos/4/os/i386/
+
+#Use DHCP networking
+%include /tmp/network
+
+# Partition info by wget
+%include /tmp/part
+
+#System authorization information
+%include /tmp/auth
+
+#Firewall configuration
+%include /tmp/firewall
+
+#Do not configure the X Window System
+%include /tmp/xconfig
+
+%packages
+%include /tmp/package
+
+%post
+#!/bin/bash
+IPADDR=`ifconfig eth0 | grep "inet addr" | cut -d ":" -f 2 | cut -d " " -f 1`
+HOST=`dig +short -x $IPADDR | cut -d "." -f 1`
+echo $HOST
+sleep 10
+
+wget http://192.168.0.4/kickstart/post/post.all -O /tmp/post.all
+source /tmp/post.all
+
+post_get()
+{
+	echo $1
+  	wget http://192.168.0.4/kickstart/post/post.$1 -O /tmp/post
+	source /tmp/post
+}
+
+post_get "$HOST"
+
+
+%pre --interpreter /usr/bin/python
+import socket
+import os
+
+print "Hostname"
+print socket.gethostbyaddr( os.popen("ifconfig").readlines()[1].split()[1][5:])[0][0];
+ipaddr = os.popen("ifconfig").readlines()[1].split()[1][5:]
+hostname = socket.gethostbyaddr(ipaddr)[0]
+host = hostname.split('.')[0]
+
+f = file("/tmp/network","w")
+if os.path.exists ("/proc/sys/net/ipv4/conf/eth0"):
+	f.write ("network --bootproto=dhcp --device=eth0\n")
+else:	
+	f.write ("network --bootproto=dhcp --device=eth1\n")
+f.close
+
+url = 'wget http://192.168.0.4/kickstart'
+
+# Get config files for machine.configfilename
+for file in ['part','package','auth','firewall','xconfig','interactive']:
+	print("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,host,file))
+	os.popen("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,host,file)).readlines()
+	# Otherwise get default file
+	if not os.path.exists ("/tmp/%s" % file):
+		print("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,"default",file))
+		os.popen("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,"default",file)).readlines()

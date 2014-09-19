@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<installation mode="fresh" srtype="ext">
+<primary-disk>sda</primary-disk>
+<keymap>us</keymap>
+<root-password>123456</root-password>
+<source type="url">http://ftp01.hdtr.com/os/xenserver-6.0.201</source>
+<time-config-method>ntp</time-config-method>
+<name-server>192.168.12.30</name-server>
+<name-server>192.168.12.31</name-server>
+<ntp-server>ntp.hdtr.com</ntp-server>
+<timezone>Asia/Shanghai</timezone>
+</installation>

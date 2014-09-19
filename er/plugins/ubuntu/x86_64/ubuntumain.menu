@@ -3,7 +3,7 @@
 LABEL 10.04-minimal-server-unattend
   KERNEL http://10.24.4.4/os/linux/ubuntu/x86_64/10.04/install/netboot/ubuntu-installer/amd64/linux
   INITRD http://10.24.4.4/os/linux/ubuntu/x86_64/10.04/install/netboot/ubuntu-installer/amd64/initrd.gz
-  APPEND vga=normal preseed/url=http://10.24.4.97/pxe/ks/linux/ubuntu/template/tpl_minimal.seed lang=english locale=en_US console-setup/ask_detect=false console-setup/layoutcode=us hostname= domain= auto=true priority=critical -- console-keymaps-at/keymap=us
+  APPEND vga=normal preseed/url=http://10.24.4.97/pxe/ks/template/Linux/Debian/Ubuntu/tpl_minimal.seed lang=english locale=en_US console-setup/ask_detect=false console-setup/layoutcode=us hostname= domain= auto=true priority=critical -- console-keymaps-at/keymap=us
   TEXT HELP
     Install Ubuntu 10.04 LTS Server x86_64 with preseed
     lucid-server-amd64.iso
@@ -12,7 +12,7 @@ LABEL 10.04-minimal-server-unattend
 LABEL 12.04-minimal-server-unattend
   KERNEL http://10.24.4.4/os/linux/ubuntu/x86_64/12.04/install/netboot/ubuntu-installer/amd64/linux
   INITRD http://10.24.4.4/os/linux/ubuntu/x86_64/12.04/install/netboot/ubuntu-installer/amd64/initrd.gz
-  APPEND vga=normal preseed/url=http://10.24.4.97/pxe/ks/linux/ubuntu/tpl_minimal.seed lang=english locale=en_US console-setup/ask_detect=false console-setup/layoutcode=us hostname= domain= auto=true priority=critical -- console-keymaps-at/keymap=us
+  APPEND vga=normal preseed/url=http://10.24.4.97/pxe/ks/template/Linux/Debian/Ubuntu/tpl_minimal.seed lang=english locale=en_US console-setup/ask_detect=false console-setup/layoutcode=us hostname= domain= auto=true priority=critical -- console-keymaps-at/keymap=us
   TEXT HELP
     Install Ubuntu 12.04 LTS Server x86_64 with preseed
     precise-server-amd64.iso

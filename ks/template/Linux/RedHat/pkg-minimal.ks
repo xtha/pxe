@@ -1,0 +1,17 @@
+%packages
+@base
+@client-mgmt-tools
+@console-internet
+@core
+@debugging
+@hardware-monitoring
+@network-file-system-client
+@performance
+@perl-runtime
+@server-platform
+@server-policy
+pax
+oddjob
+sgpio
+certmonger
+%end
