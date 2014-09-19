@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<installation>
+<primary-disk>sda</primary-disk>
+<keymap>uk</keymap>
+<network-backend>bridge</network-backend>
+<root-password>xenroot</root-password>
+<source type="url">http://xenserver-installer/XenServer_5.6_FP1</source>
+<ntp-server>ntp2a.macc.ac.uk</ntp-server>
+<admin-interface name="eth0" proto="dhcp" />
+<timezone>Europe/London</timezone>
+<script stage="installation-complete">http://xenserver-installer/XenServer_5.6_FP1/post-install.sh</script>
+</installation>

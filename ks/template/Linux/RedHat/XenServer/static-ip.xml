@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<installation mode="fresh" srtype="lvm">
+<bootloader>extlinux</bootloader>
+<primary-disk>sda</primary-disk>
+<hostname>pxeclient</hostname>
+<keymap>us</keymap>
+<root-password>password</root-password>
+<source type="url">http://10.24.4.4/os/xs-6.0.2</source>
+<name-server>114.114.114.114</name-server>
+<name-server>8.8.8.8</name-server>
+<time-config-method>ntp</time-config-method>
+<ntp-server>ntp.fudan.edu.cn</ntp-server>
+<admin-interface name="eth0" proto="static">
+<ip>192.168.0.1</ip>
+<subnet-mask>255.255.255.0</subnet-mask>
+<gateway>192.168.0.254</gateway>
+</admin-interface>
+<timezone>Asia/Shanghai</timezone>
+</installation>
