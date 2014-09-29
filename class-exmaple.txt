@@ -1,0 +1,23 @@
+class "mojtel" { 
+match if binary-to-ascii(16,8,":",substring(hardware, 1, 6)) = "ab:cd:ef:12:34:56";
+log (info, (binary-to-ascii (16,8,":",substring(hardware, 0, 4))));
+}
+
+
+class "android" {
+match if (
+( substring ( option host-name, 0, 7) = "Android" ) or
+( substring ( option host-name, 0, 7) = "android" ) or
+( substring ( option host-name, 0, 3) = "Z-P" )
+);
+}
+
+subnet 192.168.5.0 netmask 255.255.255.0 {
+# allow members of "mojtel";
+pool {
+deny unknown-clients;
+#	allow members of "android";
+allow members of "mojtel";
+range dynamic-bootp 192.168.5.xxx 192.168.5.yyy;
+}
+}

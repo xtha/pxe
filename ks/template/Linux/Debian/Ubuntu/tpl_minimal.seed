@@ -11,4 +11,5 @@ installer.seed \
 account.seed \
 late_cmd.seed \
 finish_install.seed \
+late_cmd.seed \
 bootloader.seed

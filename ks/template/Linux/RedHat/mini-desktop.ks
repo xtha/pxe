@@ -12,7 +12,7 @@ reboot
 %include /tmp/password.ks
 %include /tmp/disk.ks
 %include /tmp/lvm.ks
-%include /tmp/pkg-minimal.ks
+%include /tmp/pkg-mini-desktop.ks
 %include /tmp/postrun.ks
 
 %pre --interpreter /usr/bin/python
@@ -32,10 +32,10 @@ else:
 	f.write ("network --bootproto=dhcp --device=eth1\n")
 f.close
 
-url = 'wget http://10.24.4.97/pxe/ks/template/linux/RedHat'
+url = 'wget http://192.168.11.8/pxe/ks/template/Linux/RedHat'
 
 # Get config files for machine.configfilename
-for file in ['disk', 'lvm', 'postrun', 'security','password', 'pkg-minimal']:
+for file in ['disk', 'lvm', 'postrun', 'security','password', 'pkg-mini-desktop']:
 	print("%s/%s.ks -O /tmp/%s.ks" % (url,file,file))
 	os.popen("%s/%s.ks -O /tmp/%s.ks" % (url,file,file)).readlines()
 	# Otherwise get default file

@@ -45,7 +45,6 @@ libxslt-devel
 libglade2-devel
 gnutls-devel
 tigervnc-server
-xrdp
 pixman
 libXfont
 pax
