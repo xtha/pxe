@@ -1,0 +1,25 @@
+menu_item = {
+    'os': {
+        'kernel': '',
+        'initrd': '',
+        'imgargs': ''
+    },
+    'label': '',
+    'menu_label': '',
+    'help_text': '',
+}
+
+syslinux_menu_format = '''
+LABEL label
+MENU LABEL MENU_LABEL
+KERNEL KERNEL
+INITRD INITRD
+TEXT HELP
+TEXT END
+'''
+
+ipxe_menu_format = '''
+kernel KERNEL
+initrd INITRD
+imgargs IMGARGS
+'''

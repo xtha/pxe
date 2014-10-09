@@ -10,6 +10,7 @@
 @perl-runtime
 @server-platform
 @server-policy
+yum-utils
 pax
 oddjob
 sgpio

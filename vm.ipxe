@@ -1,0 +1,26 @@
+#!ipxe
+set ks_host:string 192.168.11.8
+set os_host:string 192.168.31.245
+set os_dir:string os
+set os_kernel:string Linux
+set os_family:string RedHat
+set os_name:string CentOS
+set os_arch:string x86_64
+set os_release:string 6.3
+set kernel:string images/pxeboot/vmlinuz
+set initrd:string images/pxeboot/initrd.img
+set kernel_src:string http://${os_host}/${os_dir}/${os_kernel}/${os_family}/${os_name}/${os_arch}/${os_release}/${kernel}
+set initrd_src:string http://${os_host}/${os_dir}/${os_kernel}/${os_family}/${os_name}/${os_arch}/${os_release}/${initrd}
+set ks_dir:string pxe/ks/template/${os_kernel}/${os_family}
+set ks_src:string http://${ks_host}/${ks_dir}/mini-desktop.ks
+echo ${kernel_src}
+echo ${initrd_src}
+echo ${ks_src}
+
+#sleep 2
+kernel ${kernel_src}
+initrd ${initrd_src}
+imgargs vmlinuz ip=dhcp ksdevice=bootif lang=text kssendmac ks=${ks_src}
+boot
+echo "Booting Failed !"
+shell

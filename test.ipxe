@@ -1,0 +1,6 @@
+#!ipxe
+kernel http://10.24.4.4/os/Linux/RedHat/CentOS/x86_64/6.3/images/pxeboot/vmlinuz
+initrd http://10.24.4.4/os/Linux/RedHat/CentOS/x86_64/6.3/images/pxeboot/initrd.img
+imgargs vmlinuz ip=dhcp ksdevice=bootif lang=text
+boot || echo "Booting Failed !"
+shell
