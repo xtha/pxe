@@ -1,7 +1,6 @@
-# 必须按照顺序写配置，%pre不能置于前面，获取install.img后才会执行%pre脚本
 lang en_US.UTF-8
 keyboard us
-url --url=http://192.168.31.245/os/Linux/RedHat/CentOS/x86_64/6.3
+url --url=http://192.168.31.245/os/Linux/RedHat/RedHat/x86_64/6.3
 text
 install
 bootloader --location=mbr --driveorder=xvda --append=" rhgb crashkernel=auto quiet"
@@ -11,8 +10,8 @@ reboot
 %include /tmp/security.ks
 %include /tmp/password.ks
 %include /tmp/disk.ks
-%include /tmp/lvm.ks
-%include /tmp/pkg-minimal.ks
+%include /tmp/lvm-32g.ks
+%include /tmp/pkg-mini-desktop.ks
 %include /tmp/postrun.ks
 
 %pre --interpreter /usr/bin/python
@@ -32,10 +31,10 @@ else:
 	f.write ("network --bootproto=dhcp --device=eth1\n")
 f.close
 
-url = 'wget http://10.24.4.97/pxe/ks/template/linux/RedHat'
+url = 'wget http://192.168.11.8/pxe/ks/template/Linux/RedHat'
 
 # Get config files for machine.configfilename
-for file in ['disk', 'lvm', 'postrun', 'security','password', 'pkg-minimal']:
+for file in ['postrun', disk', 'lvm-32g', 'postrun', 'security','password', 'pkg-mini-desktop']:
 	print("%s/%s.ks -O /tmp/%s.ks" % (url,file,file))
 	os.popen("%s/%s.ks -O /tmp/%s.ks" % (url,file,file)).readlines()
 	# Otherwise get default file
@@ -43,8 +42,6 @@ for file in ['disk', 'lvm', 'postrun', 'security','password', 'pkg-minimal']:
 #		print("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,"default",file))
 #		os.popen("%s/%s/%s.%s -O /tmp/%s" % (url,file,file,"default",file)).readlines()
 %end
-
 %post
 #!/bin/bash
-sed -i '/initdefault:/s/3/5/' /etc/inittab
-eject
+sh /tmp/postrun.sh

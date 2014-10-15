@@ -1,0 +1,4 @@
+TODO:
+  1. lvm.ks swapx2
+  2. /proc/cmdline: os=RedHat os_version=6.3 os_arch=x86_64 salt_conf= check_mk-agent=yes
+  3. add koan like script for os re-install
