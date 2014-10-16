@@ -1,4 +1,12 @@
+#local=/hdtr.com/
+# For debugging purposes, log each DNS query as it passes through
+# dnsmasq.
+log-queries
+
+# Log lots of extra information about DHCP transactions.
+log-dhcp
+
 tftp-root=/var/www/html/pxe
 dhcp-match=ipxe,175
-dhcp-boot=net:#ipxe,ipxelinux.0,,10.24.4.97
-dhcp-boot=http://10.24.4.97/pxe/menu.ipxe,,10.24.4.97
+dhcp-boot=net:#ipxe,ipxelinux.0,,192.168.11.8
+dhcp-boot=http://192.168.11.8/pxe/menu.ipxe,,192.168.11.8

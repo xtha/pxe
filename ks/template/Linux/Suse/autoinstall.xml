@@ -1,0 +1,1 @@
+#append initrd=initrd autoyast=ftp://192.168.128.130/autoinst.xml install=ftp://192.168.128.130/suse/

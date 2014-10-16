@@ -1,0 +1,4 @@
+LABEL SLES_11_SP1 install
+    KERNEL http://10.24.4.4/os/Linux/Suse/Suse/x86_64/SLES11_SP1/boot/x86_64/loader/linux
+    INITRD http://10.24.4.4/os/Linux/Suse/Suse/x86_64/SLES11_SP1/boot/x86_64/loader/initrd
+    APPEND autoyast=http://10.24.4.97/autoinst.xml install=http://10.24.4.4/os/Linux/Suse/Suse/x86_64/SLES11_SP1 splash=verbose showopts
